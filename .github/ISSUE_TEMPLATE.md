@@ -14,3 +14,10 @@ Please review first that the issue is fully related with this SDK by checking th
 * Javascript version:
 * Operating System:
 
+### Description
+
+<!-- Describe what you were trying to get done. -->
+
+### Steps to reproduce
+
+<!-- You must include full steps to repr
