@@ -20,4 +20,10 @@ Please review first that the issue is fully related with this SDK by checking th
 
 ### Steps to reproduce
 
-<!-- You must include full steps to repr
+<!-- You must include full steps to reproduce so that we can reproduce the problem. -->
+
+```
+Paste the command(s) you ran and the output.
+```
+
+**Expected results:** <!-
