@@ -26,4 +26,11 @@ Please review first that the issue is fully related with this SDK by checking th
 Paste the command(s) you ran and the output.
 ```
 
-**Expected results:** <!-
+**Expected results:** <!-- what you expected to happen? -->
+
+**Actual results:** <!-- what did you see? -->
+
+### Traceback
+
+<details>
+  <summary>Logs</summar
