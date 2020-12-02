@@ -36,4 +36,11 @@ Paste the command(s) you ran and the output.
   <summary>Logs</summary>
 <!--
       Run to run your app by setting the logger level to DEBUG and attach all
-      the output below between the lines with the backticks. In
+      the output below between the lines with the backticks. Include exceptions
+      and all trace info that can be useful.
+-->
+
+```
+Paste the logs that you consider useful for diagnostic.
+```
+</detai
