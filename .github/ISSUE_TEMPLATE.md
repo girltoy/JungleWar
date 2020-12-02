@@ -33,4 +33,7 @@ Paste the command(s) you ran and the output.
 ### Traceback
 
 <details>
-  <summary>Logs</summar
+  <summary>Logs</summary>
+<!--
+      Run to run your app by setting the logger level to DEBUG and attach all
+      the output below between the lines with the backticks. In
