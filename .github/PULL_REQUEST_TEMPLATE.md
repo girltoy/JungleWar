@@ -12,4 +12,6 @@
 
 ## Checklist
 
-- [ ] I rea
+- [ ] I read the Contributing guide.
+- [ ] I update the documentation and if the case the README.md file.
+- [ ] I am willing to follow-up on review c
