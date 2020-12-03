@@ -4,4 +4,12 @@
 
 ## Related issues
 
-<!-- Add a list of the issue
+<!-- Add a list of the issues related to this PR. -->
+
+## Tests
+
+<!-- Describe or reference for all changed/updated/fixed behaviors. -->
+
+## Checklist
+
+- [ ] I rea
