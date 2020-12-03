@@ -43,4 +43,4 @@ Paste the command(s) you ran and the output.
 ```
 Paste the logs that you consider useful for diagnostic.
 ```
-</detai
+</details>
