@@ -6,4 +6,8 @@ The previous documentation often incorrectly showed the results of the methods h
 
 ### Client initialization
 
-- `ModzyClient` constructor parameter changed to single object. The `url` 
+- `ModzyClient` constructor parameter changed to single object. The `url` key is optional as it defaults to app.modzy.com
+
+### Model methods
+
+- Added `getActiveModels`. It always returns _all_ active models with more useful details. This api call
