@@ -11,4 +11,7 @@ The previous documentation often incorrectly showed the results of the methods h
 ### Model methods
 
 - Added `getActiveModels`. It always returns _all_ active models with more useful details. This api call does not support pagination.
-- Removed `getAllModels`. Use `getModels` with no params to get the first 500 models or `getActiv
+- Removed `getAllModels`. Use `getModels` with no params to get the first 500 models or `getActiveModels()`.
+- Removed `getRelatedModels` as the results were most often not useful
+- Renamed `getModel` to `getModelById`
+- Rename `getModelVersions` to `getMode
