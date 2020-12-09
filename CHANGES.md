@@ -14,4 +14,6 @@ The previous documentation often incorrectly showed the results of the methods h
 - Removed `getAllModels`. Use `getModels` with no params to get the first 500 models or `getActiveModels()`.
 - Removed `getRelatedModels` as the results were most often not useful
 - Renamed `getModel` to `getModelById`
-- Rename `getModelVersions` to `getMode
+- Rename `getModelVersions` to `getModelVersionsById`
+- Renamed `getModelVersion` to `getModelDetails`; parameter change to single object
+- `getModels` parameter change to singl
