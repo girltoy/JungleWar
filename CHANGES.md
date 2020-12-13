@@ -18,4 +18,8 @@ The previous documentation often incorrectly showed the results of the methods h
 - Renamed `getModelVersion` to `getModelDetails`; parameter change to single object
 - `getModels` parameter change to single object.
 - `getModelVersionInputSample` parameter change to single object
-- `getModelVersionOutputSample` parameter change to sing
+- `getModelVersionOutputSample` parameter change to single object
+
+### Job status and result methods
+
+- Added `getOutputContents` which gets the contents of a specific job output - especially use
