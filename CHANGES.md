@@ -16,4 +16,6 @@ The previous documentation often incorrectly showed the results of the methods h
 - Renamed `getModel` to `getModelById`
 - Rename `getModelVersions` to `getModelVersionsById`
 - Renamed `getModelVersion` to `getModelDetails`; parameter change to single object
-- `getModels` parameter change to singl
+- `getModels` parameter change to single object.
+- `getModelVersionInputSample` parameter change to single object
+- `getModelVersionOutputSample` parameter change to sing
