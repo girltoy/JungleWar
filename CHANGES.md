@@ -22,4 +22,5 @@ The previous documentation often incorrectly showed the results of the methods h
 
 ### Job status and result methods
 
-- Added `getOutputContents` which gets the contents of a specific job output - especially use
+- Added `getOutputContents` which gets the contents of a specific job output - especially useful if the output is a binary file
+- Added `getProcessingEngineStatus` which returns an array of actively running processing en
