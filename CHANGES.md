@@ -25,4 +25,9 @@ The previous documentation often incorrectly showed the results of the methods h
 - Added `getOutputContents` which gets the contents of a specific job output - especially useful if the output is a binary file
 - Added `getProcessingEngineStatus` which returns an array of actively running processing engines and their statuses
 - Renamed `blockUntilComplete` to `blockUntilJobComplete`. It takes just the jobId as a parameter; adds an optional second parameter that is a config object to specify the number of milliseconds between checks for job completion.
-- `getJob
+- `getJobHistory` parameter change to single object
+
+### Job submission methods
+
+- `submitJobText` parameter change to single object
+- `subm
