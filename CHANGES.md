@@ -30,4 +30,4 @@ The previous documentation often incorrectly showed the results of the methods h
 ### Job submission methods
 
 - `submitJobText` parameter change to single object
-- `subm
+- `submitJobEmbedded` parameter change to single object. This method no longer handles any parsing of the embedded file and assumes that the sources
