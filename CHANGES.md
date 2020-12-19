@@ -37,4 +37,9 @@ The previous documentation often incorrectly showed the results of the methods h
 
 ### New utilities
 
-- Added `fileToDataUrl`, (browser only) a utility to convert a File blob t
+- Added `fileToDataUrl`, (browser only) a utility to convert a File blob to a base64 data URL
+- Added `pathToDataUrl`, (Node only) a utility to convert a file to a base64 data URL
+
+### Samples
+
+- Added s
