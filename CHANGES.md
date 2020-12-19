@@ -42,4 +42,4 @@ The previous documentation often incorrectly showed the results of the methods h
 
 ### Samples
 
-- Added s
+- Added sample React components
