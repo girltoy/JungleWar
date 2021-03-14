@@ -1,0 +1,4 @@
+:doctype: article
+:icons: font
+:source-highlighter: highlightjs
+:docname: Java

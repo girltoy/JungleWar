@@ -134,3 +134,40 @@ await modzyClient.blockUntilJobComplete(jobIdentifier);
 Get the output results:
 
 ```javascript
+const result = await modzyClient.getResult(jobIdentifier);
+```
+
+## SDK Code Examples
+
+* [`samples`](https://github.com/modzy/sdk-javascript/tree/main/samples) provides details for specific use cases and are intended to be run using Node.js, but most can also run in the browser
+* [`react examples`](https://github.com/modzy/sdk-javascript/tree/main/samples/react%20examples) contains react components that can be used to the browser to send files to, or retrieve files from Modzy.
+ 
+To run these examples, make sure to update `API_KEY` and `MODZY_URL` to valid values.
+
+## Running Tests
+
+The Jest tests expect that there is a .env file at the root of the repo that contains a valid Modzy api key like this:
+
+```
+API_KEY=xxxxxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxx
+```
+
+# Documentation
+
+Modzy's SDK is built on top of the [Modzy HTTP/REST API](https://docs.modzy.com/reference/introduction). For a full list of features and supported routes visit [JavaScript SDK on docs.modzy.com](https://docs.modzy.com/docs/javascript)
+
+# Support
+
+For support, email opensource@modzy.com or join our [Slack](https://www.modzy.com/slack).
+
+# Contributing
+
+Contributions are always welcome!
+
+See [`contributing.md`](https://github.com/modzy/sdk-javascript/tree/main/contributing.adoc) for ways to get started.
+
+Please adhere to this project's `code of conduct`.
+
+We are happy to receive contributions from all of our users. Check out our contributing file to learn more.
+
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://github.com/modzy/sdk-javascript/tree/main/CODE_OF_CONDUCT.md)
