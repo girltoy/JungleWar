@@ -22,4 +22,6 @@
 
 <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/modzy/sdk-javascript">
 
-<img alt="GitHub last commit" src="https://img.shields.io/github/last
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/modzy/sdk-javascript">
+
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/modzy/sdk-javascript
