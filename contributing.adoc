@@ -56,4 +56,6 @@ Below you'll find our contributing requirements, a step-by-step guideline, and o
 
 == Requirements
 
-- Search previous link:https://github.com/modzy/sdk-javasc
+- Search previous link:https://github.com/modzy/sdk-javascript/issues[issues] before making new ones to avoid duplicates.
+- If you are reporting a bug, please include:
+  . Y
