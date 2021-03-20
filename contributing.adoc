@@ -29,4 +29,13 @@
 <br>
 <br>
 
-<img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor Covenant" 
+<img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor Covenant" style="max-width:100%;">
+
+</div>
+
+<br>
+<br>
+
+<div align="center">
+<a href="/README.md" style="text-decoration:none">Readme</a> |
+<a href=https://docs.m
