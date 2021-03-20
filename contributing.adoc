@@ -24,4 +24,9 @@
 
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/modzy/sdk-javascript">
 
-<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/modzy/sdk-javascript
+<img alt="GitHub Release Date" src="https://img.shields.io/github/release-date/modzy/sdk-javascript">
+
+<br>
+<br>
+
+<img src="https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg" alt="Contributor Covenant" 
