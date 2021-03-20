@@ -51,4 +51,9 @@
 
 Contributions are welcome and they are greatly appreciated! Every little bit helps, and credit will always be given.
 
-Below you'll find our contributing require
+Below you'll find our contributing requirements, a step-by-step guideline, and our features roadmap.
+
+
+== Requirements
+
+- Search previous link:https://github.com/modzy/sdk-javasc
