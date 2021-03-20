@@ -38,4 +38,15 @@
 
 <div align="center">
 <a href="/README.md" style="text-decoration:none">Readme</a> |
-<a href=https://docs.m
+<a href=https://docs.modzy.com/docs style="text-decoration:none">Documentation</a>
+
+</div>
+
+<br>
+<br>
+<br>
+<br>
+
+++++
+
+Contributions are welcome and th
