@@ -58,4 +58,5 @@ Below you'll find our contributing requirements, a step-by-step guideline, and o
 
 - Search previous link:https://github.com/modzy/sdk-javascript/issues[issues] before making new ones to avoid duplicates.
 - If you are reporting a bug, please include:
-  . Y
+  . Your operating system name and version.
+  . Any details about your local setup that might be helpful in troublesho
