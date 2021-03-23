@@ -71,4 +71,15 @@ Below you'll find our contributing requirements, a step-by-step guideline, and o
 - Add test cases and comment them.
 //- Check your spelling and grammar.
 - Use descriptive commit messages that clearly explain the changes. Reference the original issue in the pull request.
-- Make an individual pull r
+- Make an individual pull request for each issue.
+
+
+
+== Guidelines
+
+
+=== 1. Fork the repo and set it for local development
+
+Clone the repository:
+
+- `$ git cl
