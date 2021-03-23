@@ -67,4 +67,7 @@ Below you'll find our contributing requirements, a step-by-step guideline, and o
   . Remember that this is a volunteer-driven project, and that contributions are welcome.
 - File an issue to let us know what you're working on.
 - Fork the repo, develop and test your code changes, and add supporting documentation.
-- Use
+- Use descriptive comments throughout your code.
+- Add test cases and comment them.
+//- Check your spelling and grammar.
+- Use descr
