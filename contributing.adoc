@@ -70,4 +70,5 @@ Below you'll find our contributing requirements, a step-by-step guideline, and o
 - Use descriptive comments throughout your code.
 - Add test cases and comment them.
 //- Check your spelling and grammar.
-- Use descr
+- Use descriptive commit messages that clearly explain the changes. Reference the original issue in the pull request.
+- Make an individual pull r
