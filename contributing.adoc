@@ -82,4 +82,10 @@ Below you'll find our contributing requirements, a step-by-step guideline, and o
 
 Clone the repository:
 
-- `$ git cl
+- `$ git clone https://github.com/modzy/sdk-javascript.git`
+
+Install dependencies:
+
+- `$ yarn install` or `$ npm install`
+
+Create a branch for y
