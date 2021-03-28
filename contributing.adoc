@@ -88,4 +88,13 @@ Install dependencies:
 
 - `$ yarn install` or `$ npm install`
 
-Create a branch for y
+Create a branch for your awesome new feature:
+
+- `$ git checkout -b my-awesome-new-feature`
+
+
+=== 2. Develop your changes
+
+Fix that bug or build your feature.
+
+=== 3. 
