@@ -97,4 +97,10 @@ Create a branch for your awesome new feature:
 
 Fix that bug or build your feature.
 
-=== 3. 
+=== 3. Run unit tests
+
+Configure the environment variables to easily run all the tests with a single configuration point.
+
+You can:
+
+==== Se
