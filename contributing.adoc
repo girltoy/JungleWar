@@ -103,4 +103,11 @@ Configure the environment variables to easily run all the tests with a single co
 
 You can:
 
-==== Se
+==== Set environment variables in bash
+
+===== Windows
+
+[source,bash]
+----
+set MODZY_BASE_URL=http://modzy.com/api
+set MODZY_API_KEY=my_ke
