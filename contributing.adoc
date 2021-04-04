@@ -121,4 +121,10 @@ export MODZY_BASE_URL=http://modzy.com/api
 export MODZY_API_KEY=my_key.modzy
 ----
 
-=
+==== Use `.env` file
+
+Create a `.env` file in the root folder with your API key:
+
+[source,js]
+----
+MODZY_BASE_URL=http://modzy
