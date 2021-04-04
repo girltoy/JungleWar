@@ -110,4 +110,15 @@ You can:
 [source,bash]
 ----
 set MODZY_BASE_URL=http://modzy.com/api
-set MODZY_API_KEY=my_ke
+set MODZY_API_KEY=my_key.modzy
+----
+
+===== Unix
+
+[source,bash]
+----
+export MODZY_BASE_URL=http://modzy.com/api
+export MODZY_API_KEY=my_key.modzy
+----
+
+=
