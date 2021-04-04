@@ -127,4 +127,15 @@ Create a `.env` file in the root folder with your API key:
 
 [source,js]
 ----
-MODZY_BASE_URL=http://modzy
+MODZY_BASE_URL=http://modzy.com/api
+MODZY_API_KEY=my_key.modzy
+
+----
+
+Run tests:
+
+- `$ yarn test` or `$ npm test`
+
+Or specify the test that you want to run:
+
+-
