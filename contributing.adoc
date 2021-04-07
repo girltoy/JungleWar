@@ -138,4 +138,12 @@ Run tests:
 
 Or specify the test that you want to run:
 
--
+- `$ yarn test -- model-client.test.js`
+
+With npm:
+
+- `$ npm test -- model-client.test.js`
+
+=== 4. Document your changes
+
+Add supporting documentation for y
