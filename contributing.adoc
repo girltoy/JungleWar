@@ -164,4 +164,9 @@ Push your branch to GitHub:
 
 - `$ git push origin my-new-awesome-feature`
 
-/
+//== Code of conduct
+
+== Roadmap
+
+- Wider API coverage (custom models, accounting, audit, etc).
+- [Maybe] Add retry logic for possibly transient issu
