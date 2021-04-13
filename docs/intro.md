@@ -253,3 +253,33 @@ Get the current results of a job execution, including completed, failed, total n
 
 .getOutputContents
 Get the contents of a specific job output. Consult the model's api for the output name and file type
+
+.blockUntilJobComplete
+Block subsequent code execution until the job changes its status to COMPLETED, TIMEDOUT or CANCELED.
+
+.getJobHistory
+Get a paginated list of jobs meeting the search parameter criteria. Returns the latest 100 jobs if no params are sent.
+
+.getProcessingEngineStatus
+Return a list of all active processing engines and their status
+
+.submitJobText
+Submit a job with plain text inputs
+
+.submitJobEmbedded
+Submit a job with the input(s) contents encoded in a Base64 data url
+
+.submitJobAwsS3
+Submit a job with the input(s) stored in a AWS S3 bucket
+
+.submitJobJDBC
+Submit a job based on a sql query on a database accessed through JDBC.
+
+.submitJobFile
+Submit a job with the input(s) specified as a Blob (browser) or file path (Node.js)
+
+.pathToDataUrl
+Convert a file path (string) to a data url for embedded job types (Node.js only)
+
+.fileToDataUrl
+Convert a JS File Object to a data url for embedded job types (browser only)
