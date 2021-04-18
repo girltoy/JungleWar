@@ -9,4 +9,6 @@ await modzyClient.blockUntilJobComplete(jobId, options);
 ## Options
 
 - `jobId: string`
-  
+  - The job identifier, e.g. "14856eb1-0ad8-49e7-9da3-887acb80fea5"
+- `options: { timeout: number }`
+  - The options object currently on
