@@ -11,4 +11,8 @@ await modzyClient.blockUntilJobComplete(jobId, options);
 - `jobId: string`
   - The job identifier, e.g. "14856eb1-0ad8-49e7-9da3-887acb80fea5"
 - `options: { timeout: number }`
-  - The options object currently on
+  - The options object currently only has one key, `timeout` that is the refresh interval in milliseconds. Defaults to `2000`.
+
+## Returns
+
+A promise that resolves to a Get
