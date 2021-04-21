@@ -15,4 +15,10 @@ await modzyClient.blockUntilJobComplete(jobId, options);
 
 ## Returns
 
-A promise that resolves to a Get
+A promise that resolves to a GetJobResponse object
+
+```typescript
+interface GetJobResponse {
+  jobIdentifier: string;
+  submittedBy: string;
+  accountIdentifier
