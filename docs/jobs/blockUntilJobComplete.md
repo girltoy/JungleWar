@@ -29,4 +29,11 @@ interface GetJobResponse {
   };
   status: string;
   createdAt: string;
-  updatedAt: st
+  updatedAt: string;
+  submittedAt: string;
+  total: number;
+  pending: number;
+  completed: number;
+  failed: number;
+  elapsedTime: number;
+  queueTime: number;
