@@ -21,4 +21,12 @@ A promise that resolves to a GetJobResponse object
 interface GetJobResponse {
   jobIdentifier: string;
   submittedBy: string;
-  accountIdentifier
+  accountIdentifier: string;
+  model: {
+    identifier: string;
+    version: string;
+    name: string;
+  };
+  status: string;
+  createdAt: string;
+  updatedAt: st
