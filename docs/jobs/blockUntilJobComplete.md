@@ -44,3 +44,14 @@ interface GetJobResponse {
     lastName: string;
     email: string;
     accessKeys: AccessKeys[];
+    status: string;
+    title: string;
+  };
+  jobInputs: JobInput[];
+  explain: boolean;
+  team: {
+    identifier: string;
+  };
+}
+
+type Acces
