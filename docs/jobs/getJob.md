@@ -1,7 +1,7 @@
 
-# modzyClient.cancelJob
+# modzyClient.getJob
 
-Send a request to the server in order to cancel a job.
+Return the job details, including the status, total, completed, and failed number of items.
 
 ```javascript
 const {
@@ -23,7 +23,7 @@ const {
   total,
   updatedAt,
   user,
-} = await modzyClient.cancelJob(jobId);
+} = await modzyClient.getJob(jobId);
 ```
 
 ## Options
@@ -71,13 +71,3 @@ interface GetJobResponse {
     identifier: string;
   };
 }
-
-type AccessKeys = {
-  prefix: string;
-  isDefault: boolean;
-};
-
-export type JobInput = {
-  identifier: string;
-};
-```
