@@ -54,4 +54,12 @@ interface GetJobResponse {
   };
 }
 
-type Acces
+type AccessKeys = {
+  prefix: string;
+  isDefault: boolean;
+};
+
+export type JobInput = {
+  identifier: string;
+};
+```
