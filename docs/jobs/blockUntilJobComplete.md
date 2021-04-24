@@ -37,3 +37,10 @@ interface GetJobResponse {
   failed: number;
   elapsedTime: number;
   queueTime: number;
+  user: {
+    identifier: string;
+    externalIdentifier: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    accessKeys: AccessKeys[];
