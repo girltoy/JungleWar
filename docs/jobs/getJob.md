@@ -71,3 +71,13 @@ interface GetJobResponse {
     identifier: string;
   };
 }
+
+type AccessKeys = {
+  prefix: string;
+  isDefault: boolean;
+};
+
+export type JobInput = {
+  identifier: string;
+};
+```
