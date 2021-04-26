@@ -14,4 +14,6 @@ const outputContents = await modzyClient.getOutputContents({
 ## Options
 
 - `jobId: string`
-  - The job identifi
+  - The job identifier, e.g. "14856eb1-0ad8-49e7-9da3-887acb80fea5"
+- `inputKey: string`
+  - The user-defined key used to identify the job input, e.g. "
