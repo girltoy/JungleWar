@@ -16,4 +16,6 @@ const outputContents = await modzyClient.getOutputContents({
 - `jobId: string`
   - The job identifier, e.g. "14856eb1-0ad8-49e7-9da3-887acb80fea5"
 - `inputKey: string`
-  - The user-defined key used to identify the job input, e.g. "
+  - The user-defined key used to identify the job input, e.g. "my-input"
+- `outputName: string`
+  - The model-defined name of the output, e.g. "results.wav". Consult the API section of the model details pag
