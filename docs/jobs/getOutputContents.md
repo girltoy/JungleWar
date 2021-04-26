@@ -18,4 +18,6 @@ const outputContents = await modzyClient.getOutputContents({
 - `inputKey: string`
   - The user-defined key used to identify the job input, e.g. "my-input"
 - `outputName: string`
-  - The model-defined name of the output, e.g. "results.wav". Consult the API section of the model details pag
+  - The model-defined name of the output, e.g. "results.wav". Consult the API section of the model details page to get the model output name.
+- `responseType: "json" | "blob" | "arraybuffer"`
+  - How the response should be formatted. Use "json" for tex
