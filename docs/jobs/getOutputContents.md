@@ -21,3 +21,7 @@ const outputContents = await modzyClient.getOutputContents({
   - The model-defined name of the output, e.g. "results.wav". Consult the API section of the model details page to get the model output name.
 - `responseType: "json" | "blob" | "arraybuffer"`
   - How the response should be formatted. Use "json" for text outputs. Use "blob" for binary files in a browser environment. Use "arraybuffer" for binary files in a Node.js environment. Defaults to "json".
+
+## Returns
+
+A promise that resolves to an unknown type (The actual result depends on the model's output and the response type specified).
