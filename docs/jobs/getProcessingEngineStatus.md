@@ -23,3 +23,6 @@ interface Engine {
   spinningUp: number;
   spinningDown: number;
   running: number;
+  ready: number;
+}
+```
