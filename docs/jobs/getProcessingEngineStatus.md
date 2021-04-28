@@ -15,4 +15,11 @@ const engineStatuses = await modzyClient.getProcessingEngineStatus();
 A promise that resolves to an array of Engine objects
 
 ```typescript
-interfa
+interface Engine {
+  identifier: string;
+  version: string;
+  failed: number;
+  queued: number;
+  spinningUp: number;
+  spinningDown: number;
+  running: number;
