@@ -33,4 +33,11 @@ const {
 
 ## Returns
 
-A promise that resolves to a GetResultResponse objec
+A promise that resolves to a GetResultResponse object
+
+```typescript
+interface GetResultResponse {
+  jobIdentifier: string;
+  accountIdentifier: string;
+  team: {
+    identifier: str
