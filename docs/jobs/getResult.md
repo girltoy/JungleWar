@@ -18,4 +18,14 @@ const {
   totalQueueTime,
   averageModelLatency,
   totalModelLatency,
-  elapsed
+  elapsedTime,
+  startingResultSummarizing,
+  resultSummarizing,
+  inputSize,
+  results,
+} = await modzyClient.getResult(jobId);
+```
+
+## Options
+
+- `jo
