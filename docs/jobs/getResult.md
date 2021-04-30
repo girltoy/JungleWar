@@ -28,4 +28,9 @@ const {
 
 ## Options
 
-- `jo
+- `jobId: string`
+  - The job identifier, e.g. "14856eb1-0ad8-49e7-9da3-887acb80fea5"
+
+## Returns
+
+A promise that resolves to a GetResultResponse objec
