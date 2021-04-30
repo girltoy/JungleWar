@@ -10,4 +10,12 @@ const {
   total,
   completed,
   failed,
-  fin
+  finished,
+  submittedByKey,
+  explained,
+  submittedAt,
+  initialQueueTime,
+  totalQueueTime,
+  averageModelLatency,
+  totalModelLatency,
+  elapsed
