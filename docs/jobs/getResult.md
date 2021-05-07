@@ -40,4 +40,12 @@ interface GetResultResponse {
   jobIdentifier: string;
   accountIdentifier: string;
   team: {
-    identifier: str
+    identifier: string;
+  };
+  total: number;
+  completed: number;
+  failed: number;
+  finished: boolean;
+  submittedByKey: string;
+  explained: boolean;
+  subm
