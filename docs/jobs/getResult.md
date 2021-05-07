@@ -48,4 +48,9 @@ interface GetResultResponse {
   finished: boolean;
   submittedByKey: string;
   explained: boolean;
-  subm
+  submittedAt: string;
+  initialQueueTime: number;
+  totalQueueTime: number;
+  averageModelLatency: number;
+  totalModelLatency: number;
+  elapsedTime: n
