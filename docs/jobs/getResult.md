@@ -64,4 +64,10 @@ interface GetResultResponse {
       inputFetching: number;
       outputUploading?: any;
       modelLatency: number;
-      q
+      queueTime: number;
+      startTime: string;
+      updateTime: string;
+      endTime: string;
+      [key: string]: any;
+      voting: {
+       
