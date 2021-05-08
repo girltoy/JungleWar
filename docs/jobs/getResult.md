@@ -53,4 +53,11 @@ interface GetResultResponse {
   totalQueueTime: number;
   averageModelLatency: number;
   totalModelLatency: number;
-  elapsedTime: n
+  elapsedTime: number;
+  startingResultSummarizing: string;
+  resultSummarizing: number;
+  inputSize: number;
+  results: {
+    job: {
+      status: string;
+   
