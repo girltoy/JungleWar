@@ -60,4 +60,8 @@ interface GetResultResponse {
   results: {
     job: {
       status: string;
-   
+      engine: string;
+      inputFetching: number;
+      outputUploading?: any;
+      modelLatency: number;
+      q
