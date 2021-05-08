@@ -70,4 +70,10 @@ interface GetResultResponse {
       endTime: string;
       [key: string]: any;
       voting: {
-       
+        up: 0;
+        down: 0;
+      };
+    };
+  };
+}
+```
