@@ -77,3 +77,37 @@ const {
 ## Returns
 
 A promise that resolves to a SubmitJobResponse object
+
+```typescript
+interface SubmitJobResponse {
+  model: {
+    identifier: string;
+    version: string;
+    name: string;
+  };
+  status: string;
+  totalInputs: number;
+  jobIdentifier: string;
+  accessKey: string;
+  explain: boolean;
+  jobType: string;
+  accountIdentifier: string;
+  team: {
+    identifier: string;
+  };
+  user: {
+    identifier: string;
+    externalIdentifier: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    status: string;
+  };
+  jobInputs: {
+    identifier: string[];
+  };
+  submittedAt: string;
+  hoursDeleteInput: number;
+  imageClassificationModel: boolean;
+}
+```
