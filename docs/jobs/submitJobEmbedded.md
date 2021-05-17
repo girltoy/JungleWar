@@ -4,4 +4,9 @@ Submit a job using base64 data URLs as input(s). Note that due to memory constra
 
 To simplify the creation of base64 data URLs, the modzyClient includes two utility methods, modzyClient.fileToDataUrl for browser environments, modzyClient.pathToDataUrl for Node.js environments.
 
-```javascrip
+```javascript
+const embeddedImage = await modzyClient.pathToDataUrl(
+  "./image.png",
+  "image/png"
+);
+const embeddedConfig = await modz
