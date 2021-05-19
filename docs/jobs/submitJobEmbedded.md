@@ -9,4 +9,9 @@ const embeddedImage = await modzyClient.pathToDataUrl(
   "./image.png",
   "image/png"
 );
-const embeddedConfig = await modz
+const embeddedConfig = await modzyClient.pathToDataUrl(
+  "./config.json",
+  "application/json"
+);
+const sources = {
+  "my-input": { input: embeddedImage, "config.json": embe
