@@ -25,4 +25,11 @@ const {
   accessKey,
   explain,
   jobType,
-  accountIden
+  accountIdentifier,
+  team,
+  user,
+  jobInputs,
+  submittedAt,
+  hoursDeleteInput,
+  imageClassificationModel,
+} = await modzyClient.submitJobEm
