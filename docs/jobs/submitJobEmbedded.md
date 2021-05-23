@@ -32,4 +32,15 @@ const {
   submittedAt,
   hoursDeleteInput,
   imageClassificationModel,
-} = await modzyClient.submitJobEm
+} = await modzyClient.submitJobEmbedded({
+    modelId,
+    version,
+    explain = false,
+    sources,
+  });
+```
+
+## Options
+
+- `modelId: string`
+  - The model identifier
