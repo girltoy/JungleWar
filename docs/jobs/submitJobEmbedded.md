@@ -14,4 +14,15 @@ const embeddedConfig = await modzyClient.pathToDataUrl(
   "application/json"
 );
 const sources = {
-  "my-input": { input: embeddedImage, "config.json": embe
+  "my-input": { input: embeddedImage, "config.json": embeddedConfig },
+};
+
+const {
+  model,
+  status,
+  totalInputs,
+  jobIdentifier,
+  accessKey,
+  explain,
+  jobType,
+  accountIden
