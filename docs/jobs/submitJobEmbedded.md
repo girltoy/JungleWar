@@ -49,4 +49,4 @@ const {
 - `explain?: boolean`
   - If the model supports explainability, setting this to `true` will return an explanation of the predictions along with the results.
 - `sources: {[userInputKey: string]: { [modelInputName: string]: encodedFile: string }}`
-  - `sources` is an object, and each key in that object represents a set of inputs. To know how to structure your sources object, you need to know what inputs the model requires and the name of those inputs. Some models only have have one input, while others require multiple inputs. Consult the 
+  - `sources` is an object, and each key in that object represents a set of inputs. To know how to structure your sources object, you need to know what inputs the model requires and the name of those inputs. Some models only have have one input, while others require multiple inputs. Consult the API section of the model details page to get the correct input name(s). For example, the Multi-language OCR model takes two inputs named "input" and "config.js
