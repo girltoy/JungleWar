@@ -54,4 +54,8 @@ const {
     const sources = {
       "my-input": {
         input: embeddedImage,
-    
+        "config.json": embeddedConfig,
+      },
+    };
+    ```
+    If you wanted to submit multiple inputs in a single job, the so
