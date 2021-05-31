@@ -63,4 +63,12 @@ const {
     const sources = {
       "input-1": {
         input: embeddedImage,
-        "config.json":
+        "config.json": embeddedConfig,
+      },
+      "input-2": {
+        input: embeddedImage,
+        "config.json": embeddedConfig,
+      },
+    };
+    ```
+
