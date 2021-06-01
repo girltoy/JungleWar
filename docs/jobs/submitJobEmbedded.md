@@ -86,4 +86,12 @@ interface SubmitJobResponse {
   status: string;
   totalInputs: number;
   jobIdentifier: string;
-  accessK
+  accessKey: string;
+  explain: boolean;
+  jobType: string;
+  accountIdentifier: string;
+  team: {
+    identifier: string;
+  };
+  user: {
+    identifier: s
