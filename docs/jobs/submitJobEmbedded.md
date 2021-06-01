@@ -72,3 +72,11 @@ const {
     };
     ```
 
+## Returns
+
+A promise that resolves to a SubmitJobResponse object
+
+```typescript
+interface SubmitJobResponse {
+  model: {
+    identi
