@@ -79,4 +79,11 @@ A promise that resolves to a SubmitJobResponse object
 ```typescript
 interface SubmitJobResponse {
   model: {
-    identi
+    identifier: string;
+    version: string;
+    name: string;
+  };
+  status: string;
+  totalInputs: number;
+  jobIdentifier: string;
+  accessK
