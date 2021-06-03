@@ -94,4 +94,9 @@ interface SubmitJobResponse {
     identifier: string;
   };
   user: {
-    identifier: s
+    identifier: string;
+    externalIdentifier: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    status
