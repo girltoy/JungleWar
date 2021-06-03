@@ -106,4 +106,6 @@ interface SubmitJobResponse {
   };
   submittedAt: string;
   hoursDeleteInput: number;
-  imageClassifi
+  imageClassificationModel: boolean;
+}
+```
