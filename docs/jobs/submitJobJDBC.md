@@ -24,3 +24,13 @@ const {
   url,
   username,
   password,
+  driver,
+  query,
+  explain,
+});
+```
+
+## Options
+
+- `modelId: string`
+  - The model identifier, e.g. "ed542963de
