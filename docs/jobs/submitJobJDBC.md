@@ -6,3 +6,14 @@ Submit a job using JDCB parameters as inputs
 const {
   model,
   status,
+  totalInputs,
+  jobIdentifier,
+  accessKey,
+  explain,
+  jobType,
+  accountIdentifier,
+  team,
+  user,
+  jobInputs,
+  submittedAt,
+  h
