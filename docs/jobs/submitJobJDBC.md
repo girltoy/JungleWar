@@ -16,4 +16,11 @@ const {
   user,
   jobInputs,
   submittedAt,
-  h
+  hoursDeleteInput,
+  imageClassificationModel,
+} = await modzyClient.submitJobJDBC({
+  modelId,
+  version,
+  url,
+  username,
+  password,
