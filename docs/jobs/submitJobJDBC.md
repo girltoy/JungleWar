@@ -37,4 +37,7 @@ const {
 - `version: string`
   - The model’s version number. It follows the semantic versioning format, e.g. "1.0.1"
 - `explain?: boolean`
-  - If the model supports explainability, setting this to `true` will return an explanation of the predictions along
+  - If the model supports explainability, setting this to `true` will return an explanation of the predictions along with the results.
+- `url: string`
+  - JDBC url to connect to the database, e.g. "jdbc:postgresql://database-host:5432/mydatabase"
+- `usernam
