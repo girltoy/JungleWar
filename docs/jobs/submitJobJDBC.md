@@ -33,4 +33,7 @@ const {
 ## Options
 
 - `modelId: string`
-  - The model identifier, e.g. "ed542963de
+  - The model identifier, e.g. "ed542963de"
+- `version: string`
+  - The model’s version number. It follows the semantic versioning format, e.g. "1.0.1"
+- `exp
