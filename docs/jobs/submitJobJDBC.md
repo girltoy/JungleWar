@@ -40,4 +40,8 @@ const {
   - If the model supports explainability, setting this to `true` will return an explanation of the predictions along with the results.
 - `url: string`
   - JDBC url to connect to the database, e.g. "jdbc:postgresql://database-host:5432/mydatabase"
-- `usernam
+- `username: string`
+  - The username to access the database
+- `password: string`
+  - The password to access the database
+- `driver: s
