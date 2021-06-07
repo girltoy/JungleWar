@@ -44,4 +44,7 @@ const {
   - The username to access the database
 - `password: string`
   - The password to access the database
-- `driver: s
+- `driver: string`
+  - Full driver class name, e.g. "org.posgresql.Driver"
+- `query: string`
+  - The query to execute, notice that we will try to match the colum
