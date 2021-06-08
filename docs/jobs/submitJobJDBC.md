@@ -56,4 +56,12 @@ const {
 A promise that resolves to a SubmitJobResponse object
 
 ```typescript
-interface SubmitJob
+interface SubmitJobResponse {
+ model: {
+   identifier: string;
+   version: string;
+   name: string;
+ };
+ status: string;
+ totalInputs: number;
+ jobIden
