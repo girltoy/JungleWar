@@ -47,4 +47,13 @@ const {
 - `driver: string`
   - Full driver class name, e.g. "org.posgresql.Driver"
 - `query: string`
-  - The query to execute, notice that we will try to match the column names to the model input keys, so you'll need to use alias for that, e.g. "select description as \'input.txt\' from my-t
+  - The query to execute, notice that we will try to match the column names to the model input keys, so you'll need to use alias for that, e.g. "select description as \'input.txt\' from my-table"
+
+````
+
+## Returns
+
+A promise that resolves to a SubmitJobResponse object
+
+```typescript
+interface SubmitJob
