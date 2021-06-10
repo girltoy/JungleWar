@@ -72,4 +72,10 @@ interface SubmitJobResponse {
  team: {
    identifier: string;
  };
- user
+ user: {
+   identifier: string;
+   externalIdentifier: string;
+   firstName: string;
+   lastName: string;
+   email: string;
+   status: strin
