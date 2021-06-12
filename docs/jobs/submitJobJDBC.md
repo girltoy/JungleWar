@@ -78,4 +78,13 @@ interface SubmitJobResponse {
    firstName: string;
    lastName: string;
    email: string;
-   status: strin
+   status: string;
+ };
+ jobInputs: {
+   identifier: string[];
+ };
+ submittedAt: string;
+ hoursDeleteInput: number;
+ imageClassificationModel: boolean;
+}
+````
