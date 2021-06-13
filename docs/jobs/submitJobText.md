@@ -18,4 +18,15 @@ const {
   submittedAt,
   hoursDeleteInput,
   imageClassificationModel,
-} = awai
+} = await modzyClient.submitJobText({
+    modelId,
+    version,
+    explain = false,
+    sources,
+  });
+```
+
+## Options
+
+- `modelId: string`
+  - The
