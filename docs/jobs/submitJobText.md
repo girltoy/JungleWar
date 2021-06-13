@@ -8,4 +8,14 @@ const {
   status,
   totalInputs,
   jobIdentifier,
-  acce
+  accessKey,
+  explain,
+  jobType,
+  accountIdentifier,
+  team,
+  user,
+  jobInputs,
+  submittedAt,
+  hoursDeleteInput,
+  imageClassificationModel,
+} = awai
