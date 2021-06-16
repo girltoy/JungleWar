@@ -33,4 +33,6 @@ const {
 - `version: string`
   - The model’s version number. It follows the semantic versioning format, e.g. "1.0.1"
 - `explain?: boolean`
-  - If the model supports explainability, setting this to `true` will return an explanation of the predict
+  - If the model supports explainability, setting this to `true` will return an explanation of the predictions along with the results.
+- `sources: {[userInputKey: string]: { [modelInputName: string]: inputText: string }}`
+  - `sources` i
