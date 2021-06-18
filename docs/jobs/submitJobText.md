@@ -35,4 +35,8 @@ const {
 - `explain?: boolean`
   - If the model supports explainability, setting this to `true` will return an explanation of the predictions along with the results.
 - `sources: {[userInputKey: string]: { [modelInputName: string]: inputText: string }}`
-  - `sources` is an object, and each key in that object represents a set of inputs. To know how to structure your sources object, you need to know what inputs the model requires and the name of those inputs. Some models only have have one input, while others require multiple inputs. Consult the API section of the model details page to get the correct input name(s). For example, the Sentiment Analysis model takes a single in
+  - `sources` is an object, and each key in that object represents a set of inputs. To know how to structure your sources object, you need to know what inputs the model requires and the name of those inputs. Some models only have have one input, while others require multiple inputs. Consult the API section of the model details page to get the correct input name(s). For example, the Sentiment Analysis model takes a single input named "input.txt", so the sources object would look like this:
+    ```javascript
+    const sources = {
+      myInput: {
+     
