@@ -35,4 +35,4 @@ const {
 - `explain?: boolean`
   - If the model supports explainability, setting this to `true` will return an explanation of the predictions along with the results.
 - `sources: {[userInputKey: string]: { [modelInputName: string]: inputText: string }}`
-  - `sources` is an object, and each key in that object represents a set of inputs. To know how to structure your sources object, you need to know what input
+  - `sources` is an object, and each key in that object represents a set of inputs. To know how to structure your sources object, you need to know what inputs the model requires and the name of those inputs. Some models only have have one input, while others require multip
