@@ -39,4 +39,8 @@ const {
     ```javascript
     const sources = {
       myInput: {
-     
+        "input.txt": "Sometimes I really hate ribs.",
+      },
+    };
+    ```
+    If you wanted to submit multiple inputs in a single job, 
