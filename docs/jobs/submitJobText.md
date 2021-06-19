@@ -43,4 +43,8 @@ const {
       },
     };
     ```
-    If you wanted to submit multiple inputs in a single job, 
+    If you wanted to submit multiple inputs in a single job, the sources object might look like this:
+    ```javascript
+    const sources = {
+      "input-1": {
+        "input.txt": "Somet
