@@ -47,4 +47,9 @@ const {
     ```javascript
     const sources = {
       "input-1": {
-        "input.txt": "Somet
+        "input.txt": "Sometimes I really hate ribs.",
+      },
+      "input-2": {
+        "input.txt": "Other times I find ribs to be the best ever",
+      },
+    }
