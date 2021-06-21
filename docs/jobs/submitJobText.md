@@ -52,4 +52,14 @@ const {
       "input-2": {
         "input.txt": "Other times I find ribs to be the best ever",
       },
-    }
+    };
+    ```
+
+## Returns
+
+A promise that resolves to a SubmitJobResponse object
+
+```typescript
+interface SubmitJobResponse {
+  model: {
+    iden
