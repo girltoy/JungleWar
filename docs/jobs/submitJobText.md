@@ -62,4 +62,12 @@ A promise that resolves to a SubmitJobResponse object
 ```typescript
 interface SubmitJobResponse {
   model: {
-    iden
+    identifier: string;
+    version: string;
+    name: string;
+  };
+  status: string;
+  totalInputs: number;
+  jobIdentifier: string;
+  accessKey: string;
+  
