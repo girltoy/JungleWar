@@ -78,4 +78,11 @@ interface SubmitJobResponse {
   };
   user: {
     identifier: string;
- 
+    externalIdentifier: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    status: string;
+  };
+  jobInputs: {
+  
