@@ -85,4 +85,10 @@ interface SubmitJobResponse {
     status: string;
   };
   jobInputs: {
-  
+    identifier: string[];
+  };
+  submittedAt: string;
+  hoursDeleteInput: number;
+  imageClassificationModel: boolean;
+}
+```
