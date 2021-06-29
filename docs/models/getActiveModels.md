@@ -15,4 +15,12 @@ const {
   isAvailable,
   isCommercial,
   isExperimental,
-  isReco
+  isRecommended,
+  latestVersion,
+  longDescription,
+  name,
+  permalink,
+  sourceType,
+  tags,
+  updateDateTime,
+} = await modzyClient.getActiveModels
