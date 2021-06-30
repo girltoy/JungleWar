@@ -35,4 +35,10 @@ None
 A promise that resolves to a LatestModel object
 
 ```typescript
-interface LatestMo
+interface LatestModel {
+  activeVersions: string[];
+  author: string;
+  creationDateTime: string;
+  description: string;
+  features: Feature[];
+  ident
