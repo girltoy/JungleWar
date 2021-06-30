@@ -23,4 +23,16 @@ const {
   sourceType,
   tags,
   updateDateTime,
-} = await modzyClient.getActiveModels
+} = await modzyClient.getActiveModels();
+```
+
+## Options
+
+None
+
+## Returns
+
+A promise that resolves to a LatestModel object
+
+```typescript
+interface LatestMo
