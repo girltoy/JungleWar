@@ -52,3 +52,12 @@ interface LatestModel {
   longDescription: string;
   name: string;
   permalink: string;
+  sourceType: string;
+  tags: Tag[];
+  updateDateTime: string;
+}
+
+type Tag = {
+  dataType: string;
+  identifier: string;
+  isCategor
