@@ -41,4 +41,9 @@ interface LatestModel {
   creationDateTime: string;
   description: string;
   features: Feature[];
-  ident
+  identifier: string;
+  images: Image[];
+  isActive: boolean;
+  isAvailable: boolean;
+  isCommercial: boolean;
+  isExper
