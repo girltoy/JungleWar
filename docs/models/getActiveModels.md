@@ -46,4 +46,9 @@ interface LatestModel {
   isActive: boolean;
   isAvailable: boolean;
   isCommercial: boolean;
-  isExper
+  isExperimental: boolean;
+  isRecommended: boolean;
+  latestVersion: string;
+  longDescription: string;
+  name: string;
+  permalink: string;
