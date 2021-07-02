@@ -60,4 +60,13 @@ interface LatestModel {
 type Tag = {
   dataType: string;
   identifier: string;
-  isCategor
+  isCategorical: boolean;
+  name: string;
+};
+
+type Feature = {
+  description?: string;
+  identifier: string;
+  name: string;
+};
+```
