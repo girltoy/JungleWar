@@ -6,4 +6,15 @@ Get model instance by it's identifier
 const {
   modelId,
   latestVersion,
-  latestActiv
+  latestActiveVersion,
+  versions,
+  author,
+  name,
+  description,
+  permalink,
+  features,
+  isActive,
+  isRecommended,
+  isCommercial,
+  tags,
+  i
