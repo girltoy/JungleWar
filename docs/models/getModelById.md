@@ -17,4 +17,13 @@ const {
   isRecommended,
   isCommercial,
   tags,
-  i
+  images,
+  snapshotImages,
+  lastActiveDateTime,
+  visibility,
+} = await modzyClient.getModelById(modelId);
+```
+
+## Options
+
+- `model
