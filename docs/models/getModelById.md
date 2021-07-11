@@ -38,4 +38,11 @@ interface GetModelByIdResponse {
   modelId: string;
   latestVersion: string;
   latestActiveVersion: string;
-  versions: string
+  versions: string[];
+  author: string;
+  name: string;
+  description: string;
+  permalink: string;
+  features: Feature[];
+  isActive: boolean;
+  is
