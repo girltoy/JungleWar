@@ -31,4 +31,11 @@ const {
 
 ## Return
 
-A promise that resolve to an object describing the model in
+A promise that resolve to an object describing the model instance
+
+```typescript
+interface GetModelByIdResponse {
+  modelId: string;
+  latestVersion: string;
+  latestActiveVersion: string;
+  versions: string
