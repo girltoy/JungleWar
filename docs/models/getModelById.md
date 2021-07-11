@@ -26,4 +26,9 @@ const {
 
 ## Options
 
-- `model
+- `modelId: string`
+  - A model identifier assigned by Modzy, i.e. "ed542963de"
+
+## Return
+
+A promise that resolve to an object describing the model in
