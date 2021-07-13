@@ -45,4 +45,10 @@ interface GetModelByIdResponse {
   permalink: string;
   features: Feature[];
   isActive: boolean;
-  is
+  isRecommended: boolean;
+  isCommercial: boolean;
+  tags: Tag[];
+  images: Image[];
+  snapshotImages: any[];
+  lastActiveDateTime: string;
+  visibili
