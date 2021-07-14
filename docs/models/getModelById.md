@@ -51,4 +51,15 @@ interface GetModelByIdResponse {
   images: Image[];
   snapshotImages: any[];
   lastActiveDateTime: string;
-  visibili
+  visibility: {
+    scope: string;
+  };
+}
+
+type Image = {
+  url: string;
+  caption: string;
+  relationType: string;
+};
+
+type Tag = 
