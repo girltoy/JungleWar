@@ -71,4 +71,7 @@ type Tag = {
 
 type Feature = {
   description?: string;
-  iden
+  identifier: string;
+  name: string;
+};
+```
