@@ -62,4 +62,13 @@ type Image = {
   relationType: string;
 };
 
-type Tag = 
+type Tag = {
+  dataType: string;
+  identifier: string;
+  isCategorical: boolean;
+  name: string;
+};
+
+type Feature = {
+  description?: string;
+  iden
