@@ -12,3 +12,13 @@ const {
   name,
   description,
   permalink,
+  features,
+  isActive,
+  isRecommended,
+  isCommercial,
+  tags,
+  images,
+  snapshotImages,
+  lastActiveDateTime,
+  visibility,
+} = 
