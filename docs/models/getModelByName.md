@@ -21,4 +21,10 @@ const {
   snapshotImages,
   lastActiveDateTime,
   visibility,
-} = 
+} = await modzyClient.getModelByName(name);
+```
+
+## Options
+
+- `name: string`
+  - A model name or a part of it, i.e. "Sent
