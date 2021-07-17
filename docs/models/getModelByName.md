@@ -27,4 +27,12 @@ const {
 ## Options
 
 - `name: string`
-  - A model name or a part of it, i.e. "Sent
+  - A model name or a part of it, i.e. "Sentiment Analysis"
+
+## Return
+
+A promise that resolves to an object describing the model instance
+
+```typescript
+interface GetModelByIdResponse {
+ 
