@@ -35,4 +35,9 @@ A promise that resolves to an object describing the model instance
 
 ```typescript
 interface GetModelByIdResponse {
- 
+  modelId: string;
+  latestVersion: string;
+  latestActiveVersion: string;
+  versions: string[];
+  author: string;
+  name: string;
