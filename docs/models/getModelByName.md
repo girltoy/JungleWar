@@ -56,4 +56,13 @@ interface GetModelByIdResponse {
   };
 }
 
-t
+type Image = {
+  url: string;
+  caption: string;
+  relationType: string;
+};
+
+type Tag = {
+  dataType: string;
+  identifier: string;
+  isCategorical: bo
