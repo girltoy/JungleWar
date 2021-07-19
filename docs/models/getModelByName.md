@@ -41,3 +41,10 @@ interface GetModelByIdResponse {
   versions: string[];
   author: string;
   name: string;
+  description: string;
+  permalink: string;
+  features: Feature[];
+  isActive: boolean;
+  isRecommended: boolean;
+  isCommercial: boolean;
+  t
