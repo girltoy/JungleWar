@@ -47,4 +47,13 @@ interface GetModelByIdResponse {
   isActive: boolean;
   isRecommended: boolean;
   isCommercial: boolean;
-  t
+  tags: Tag[];
+  images: Image[];
+  snapshotImages: any[];
+  lastActiveDateTime: string;
+  visibility: {
+    scope: string;
+  };
+}
+
+t
