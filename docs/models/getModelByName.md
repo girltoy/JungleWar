@@ -65,4 +65,13 @@ type Image = {
 type Tag = {
   dataType: string;
   identifier: string;
-  isCategorical: bo
+  isCategorical: boolean;
+  name: string;
+};
+
+type Feature = {
+  description?: string;
+  identifier: string;
+  name: string;
+};
+```
