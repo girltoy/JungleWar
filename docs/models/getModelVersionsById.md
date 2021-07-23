@@ -1,3 +1,3 @@
 # modezyClient.getModelVersionsById
 
-Returns a list of all the versions of the model with the specified id. No other information is r
+Returns a list of all the versions of the model with the specified id. No other information is returned. Using `getModelById()` and pulling the `versions`, `latestVersion`, or `latestActiveVersion` from the response may suit your needs b
