@@ -15,4 +15,8 @@ const arrayOfModels = await modzyClient.getModelVersionsById(modelId);
 
 A promise that resolves to an array of Version objects
 
+```typescript
+type Version = {
+  version: string;
+};
 ```
