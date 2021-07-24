@@ -9,3 +9,10 @@ const arrayOfModels = await modzyClient.getModelVersionsById(modelId);
 ## Options
 
 - `modelId: string`
+  - A model identifier assigned by Modzy, i.e. "ed542963de"
+
+## Return
+
+A promise that resolves to an array of Version objects
+
+```
