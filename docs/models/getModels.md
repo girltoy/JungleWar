@@ -7,4 +7,14 @@ const arrayOfModels = await modzyClient.getModels({
   modelId,
   author,
   createdByEmail,
-  name
+  name,
+  description,
+  isActive,
+  isExpired,
+  isFeatured,
+  lastActiveDateTime,
+  expirationDateTime,
+  page,
+  perPage,
+  direction?: "ASC" | "DESC";
+  s
