@@ -17,4 +17,13 @@ const arrayOfModels = await modzyClient.getModels({
   page,
   perPage,
   direction?: "ASC" | "DESC";
-  s
+  sortBy,
+});
+```
+
+## Options
+
+- `modelId?: string;`
+  - Filters models by identifier. Separate multiple values with `;`.
+- `author?: string;`
+  - Filters models by the org
