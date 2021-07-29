@@ -26,4 +26,6 @@ const arrayOfModels = await modzyClient.getModels({
 - `modelId?: string;`
   - Filters models by identifier. Separate multiple values with `;`.
 - `author?: string;`
-  - Filters models by the org
+  - Filters models by the organization that created them. Separate multiple values with `;`.
+- `createdByEmail?: string;`
+  - Filters models by creator’s email. Separate multiple 
