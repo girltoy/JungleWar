@@ -36,4 +36,8 @@ const arrayOfModels = await modzyClient.getModels({
 - `isActive?: boolean;`
   - Filters models by status.
 - `isExpired?: boolean;`
-  - Filters models by expired sta
+  - Filters models by expired status.
+- `isFeatured?: boolean;`
+  - Filters models by isFeatured flag.
+- `lastActiveDateTime?: string | Date;`
+  - Filters models 
