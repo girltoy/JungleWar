@@ -32,4 +32,8 @@ const arrayOfModels = await modzyClient.getModels({
 - `name?: string;`
   - Filters models by name. Separate multiple values with `;`.
 - `description?: string;`
-  - Filt
+  - Filters models by description.
+- `isActive?: boolean;`
+  - Filters models by status.
+- `isExpired?: boolean;`
+  - Filters models by expired sta
