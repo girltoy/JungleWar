@@ -42,4 +42,8 @@ const arrayOfModels = await modzyClient.getModels({
 - `lastActiveDateTime?: string | Date;`
   - Filters models by the latest use date. It requires ISO8601 formated string (YYYY-MM-DDThh:mm:ss.sTZD) or a date object.
 - `expirationDateTime?: string | Date;`
-  - Filters models by the expiration date. It requires ISO8601 formated string (YYYY-MM-DDThh:mm:ss.sTZD) or 
+  - Filters models by the expiration date. It requires ISO8601 formated string (YYYY-MM-DDThh:mm:ss.sTZD) or a date object.
+- `page?: number;`
+  - The page number to be returned.
+- `perPage?: number;`
+  - The number of records returned
