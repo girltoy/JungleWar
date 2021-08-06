@@ -46,4 +46,5 @@ const arrayOfModels = await modzyClient.getModels({
 - `page?: number;`
   - The page number to be returned.
 - `perPage?: number;`
-  - The number of records returned
+  - The number of records returned per page. Defaults to 500.
+- `sortBy?: | "modelId" | "author" | "submittedByEmail" | "name" | "isExpired" | "isActive" | "latestVersion" | "isRec
