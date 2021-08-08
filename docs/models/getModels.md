@@ -49,4 +49,9 @@ const arrayOfModels = await modzyClient.getModels({
   - The number of records returned per page. Defaults to 500.
 - `sortBy?: | "modelId" | "author" | "submittedByEmail" | "name" | "isExpired" | "isActive" | "latestVersion" | "isRecommended" | "lastActiveDateTime" | "expirationDateTime";`
   - Sort models by the specified field.
-- `direction?: "AS
+- `direction?: "ASC" | "DESC";`
+  - Orders the records in ascending (ASC) or descending (DESC) order.
+
+## Returns
+
+Returns a promise that resolves to an array of Model obje
