@@ -54,4 +54,12 @@ const arrayOfModels = await modzyClient.getModels({
 
 ## Returns
 
-Returns a promise that resolves to an array of Model obje
+Returns a promise that resolves to an array of Model objects
+
+```typescript
+interface Model {
+  modelId: string;
+  latestVersion: string;
+  versions: string[];
+}
+```
