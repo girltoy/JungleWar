@@ -4,4 +4,7 @@
   "description": "Javascript SDK for Modzy",
   "author": "Modzy",
   "license": "Apache-2.0",
-  "main":
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mo
