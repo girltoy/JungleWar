@@ -1,2 +1,7 @@
 {
-  "name": "@modzy/modzy-s
+  "name": "@modzy/modzy-sdk",
+  "version": "2.0.1",
+  "description": "Javascript SDK for Modzy",
+  "author": "Modzy",
+  "license": "Apache-2.0",
+  "main":
