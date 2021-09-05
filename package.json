@@ -28,4 +28,6 @@
     "fs": false
   },
   "scripts": {
-    "watch": "babel --watch --extensions .ts,.tsx --ignore ./src/**/tests/**/*
+    "watch": "babel --watch --extensions .ts,.tsx --ignore ./src/**/tests/**/* ./src --out-dir dist",
+    "build": "yarn build:babel && yarn build:types",
+    "build:babel": "rimraf ./dist && babel --extensions .ts,.t
