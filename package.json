@@ -24,4 +24,8 @@
   ],
   "browser": {
     "dist/FileJobClient.js": "./dist/FileJobClientBrowser.js",
-    "dist/base64Util.js": "./di
+    "dist/base64Util.js": "./dist/base64UtilBrowser.js",
+    "fs": false
+  },
+  "scripts": {
+    "watch": "babel --watch --extensions .ts,.tsx --ignore ./src/**/tests/**/*
