@@ -19,4 +19,9 @@
   "homepage": "https://github.com/modzy/sdk-javascript#readme",
   "types": "types/index.d.ts",
   "files": [
-   
+    "dist",
+    "types"
+  ],
+  "browser": {
+    "dist/FileJobClient.js": "./dist/FileJobClientBrowser.js",
+    "dist/base64Util.js": "./di
