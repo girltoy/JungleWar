@@ -32,4 +32,8 @@
     "build": "yarn build:babel && yarn build:types",
     "build:babel": "rimraf ./dist && babel --extensions .ts,.tsx --ignore ./src/**/tests/**/* ./src --out-dir dist",
     "build:types": "rimraf ./types && tsc --project ./tsconfig.types.json && replace 'import type' 'import' ./types -r --silent && replace 'export type' 'export' ./types -r --silent",
-    "prettier": "
+    "prettier": "prettier \"{.,src,src/**,types}/*.{md,js,jsx,ts,tsx,json}\"",
+    "format": "yarn prettier --write",
+    "test": "jest"
+  },
+  "devDepende
