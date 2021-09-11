@@ -36,4 +36,8 @@
     "format": "yarn prettier --write",
     "test": "jest"
   },
-  "devDepende
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/polyfill": "^7.12.1",
+    "@b
