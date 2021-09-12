@@ -40,4 +40,8 @@
     "@babel/cli": "^7.16.0",
     "@babel/core": "^7.16.0",
     "@babel/polyfill": "^7.12.1",
-    "@b
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@types/node": "^17.0.8",
+    "@types/string-similarity": "^4.0.0",
+    "@t
