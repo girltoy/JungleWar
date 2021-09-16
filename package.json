@@ -59,4 +59,6 @@
   "dependencies": {
     "axios": "^0.24.0",
     "form-data": "^4.0.0",
-    "string-similarity": "
+    "string-similarity": "^4.0.4"
+  }
+}
