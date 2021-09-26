@@ -19,4 +19,6 @@ const modzyClient = new ModzyClient({
 async function createJobWithEmbeddedInput() {
   try {
     // Get the model object:
-    // If you already know the model identifier 
+    // If you already know the model identifier (i.e.: you got it from the URL of the model details page or the input sample),
+
+    // you can skip this step. If you don't, you can
