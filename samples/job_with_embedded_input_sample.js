@@ -15,4 +15,8 @@ const modzyClient = new ModzyClient({
   logging: "on",
 });
 
-// Create a Job with an embedded input, wait, and 
+// Create a Job with an embedded input, wait, and retrieve results:
+async function createJobWithEmbeddedInput() {
+  try {
+    // Get the model object:
+    // If you already know the model identifier 
