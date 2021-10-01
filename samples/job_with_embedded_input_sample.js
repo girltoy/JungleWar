@@ -22,4 +22,7 @@ async function createJobWithEmbeddedInput() {
     // If you already know the model identifier (i.e.: you got it from the URL of the model details page or the input sample),
 
     // you can skip this step. If you don't, you can find the model identifier by using its name as follows:
-    const { modelId, latestActiveVersion } = await modzyClient.getModel
+    const { modelId, latestActiveVersion } = await modzyClient.getModelByName(
+      "Multi-Language OCR"
+    );
+    // Or if you already know the model id and want to know more about the model,
