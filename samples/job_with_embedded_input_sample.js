@@ -25,4 +25,6 @@ async function createJobWithEmbeddedInput() {
     const { modelId, latestActiveVersion } = await modzyClient.getModelByName(
       "Multi-Language OCR"
     );
-    // Or if you already know the model id and want to know more about the model,
+    // Or if you already know the model id and want to know more about the model, you can use this instead:
+    // let model = await modzyClient.getModelById("c60c8dbd79");
+    // You can find more information about ho
