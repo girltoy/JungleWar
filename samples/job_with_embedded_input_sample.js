@@ -27,4 +27,7 @@ async function createJobWithEmbeddedInput() {
     );
     // Or if you already know the model id and want to know more about the model, you can use this instead:
     // let model = await modzyClient.getModelById("c60c8dbd79");
-    // You can find more information about ho
+    // You can find more information about how to query the models on the model_samples.js file.
+    // Or just log the model identifier and the latest version
+    console.log(
+      `The mode
