@@ -30,4 +30,7 @@ async function createJobWithEmbeddedInput() {
     // You can find more information about how to query the models on the model_samples.js file.
     // Or just log the model identifier and the latest version
     console.log(
-      `The mode
+      `The model identifier is ${modelId} and the latest active version is ${latestActiveVersion}`
+    );
+
+    // Get the model detail
