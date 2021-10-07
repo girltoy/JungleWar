@@ -33,4 +33,6 @@ async function createJobWithEmbeddedInput() {
       `The model identifier is ${modelId} and the latest active version is ${latestActiveVersion}`
     );
 
-    // Get the model detail
+    // Get the model details object:
+    // If you already know the model id, version, and the input key(s), you can skip
+    // this step. Also, you can use the following code block t
