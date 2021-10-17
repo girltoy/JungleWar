@@ -37,4 +37,9 @@ async function createJobWithEmbeddedInput() {
     // If you already know the model id, version, and the input key(s), you can skip
     // this step. Also, you can use the following code block to know about the input keys
     // and skip the call on future job submissions.
-    const modelDetails = await modzyClient.getModel
+    const modelDetails = await modzyClient.getModelDetails({
+      modelId,
+      version: latestActiveVersion,
+    });
+
+    // The info stored in model details provid
