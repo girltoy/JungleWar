@@ -44,4 +44,8 @@ async function createJobWithEmbeddedInput() {
 
     // The info stored in model details provides insights about the amount of time that
     // the model can spend processing, the input, and output keys of the model.
-    console.log(`This model
+    console.log(`This model version is ${modelDetails.version}`);
+    console.log(
+      `  timeouts: status ${modelDetails.timeout.status}ms, run ${modelDetails.timeout.run}ms `
+    );
+    
