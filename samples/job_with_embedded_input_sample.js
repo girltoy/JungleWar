@@ -42,4 +42,6 @@ async function createJobWithEmbeddedInput() {
       version: latestActiveVersion,
     });
 
-    // The info stored in model details provid
+    // The info stored in model details provides insights about the amount of time that
+    // the model can spend processing, the input, and output keys of the model.
+    console.log(`This model
