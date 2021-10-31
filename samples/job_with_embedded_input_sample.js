@@ -48,4 +48,7 @@ async function createJobWithEmbeddedInput() {
     console.log(
       `  timeouts: status ${modelDetails.timeout.status}ms, run ${modelDetails.timeout.run}ms `
     );
-    
+    console.log("  inputs: ");
+    for (const key in modelDetails.inputs) {
+      let input = modelDetails.inputs[key];
+      console.log(
