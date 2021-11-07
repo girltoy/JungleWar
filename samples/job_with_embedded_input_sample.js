@@ -55,4 +55,8 @@ async function createJobWithEmbeddedInput() {
         `    key ${input.name}, type ${input.acceptedMediaTypes}, description: ${input.description}`
       );
     }
-    console.log(" 
+    console.log("  outputs: ");
+    for (const key in modelDetails.outputs) {
+      let output = modelDetails.outputs[key];
+      console.log(
+       
