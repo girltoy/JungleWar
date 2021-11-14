@@ -66,4 +66,8 @@ async function createJobWithEmbeddedInput() {
     // Send the job:
     // An embedded input is base64 encoded data URL. The modzy client contains a utility
     // to create a data URL from a file path
- 
+    const embeddedImage = await modzyClient.pathToDataUrl(
+      "./image.png",
+      "image/png"
+    );
+    const embeddedConfig 
