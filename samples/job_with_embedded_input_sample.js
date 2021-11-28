@@ -70,4 +70,9 @@ async function createJobWithEmbeddedInput() {
       "./image.png",
       "image/png"
     );
-    const embeddedConfig 
+    const embeddedConfig = await modzyClient.pathToDataUrl(
+      "./config.json",
+      "application/json"
+    );
+
+    // With the info about the model (ident
