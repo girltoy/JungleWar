@@ -78,4 +78,7 @@ async function createJobWithEmbeddedInput() {
     // With the info about the model (identifier) and the model version (version string,
     // input / output keys), you are ready to submit the job. Prepare the source object:
     const sources = {
-   
+      "source-key": { input: embeddedImage, "config.json": embeddedConfig },
+    };
+
+    const job = await modzyClient.s
