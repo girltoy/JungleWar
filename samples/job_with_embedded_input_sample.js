@@ -75,4 +75,7 @@ async function createJobWithEmbeddedInput() {
       "application/json"
     );
 
-    // With the info about the model (ident
+    // With the info about the model (identifier) and the model version (version string,
+    // input / output keys), you are ready to submit the job. Prepare the source object:
+    const sources = {
+   
