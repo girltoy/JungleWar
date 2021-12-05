@@ -81,4 +81,10 @@ async function createJobWithEmbeddedInput() {
       "source-key": { input: embeddedImage, "config.json": embeddedConfig },
     };
 
-    const job = await modzyClient.s
+    const job = await modzyClient.submitJobEmbedded({
+      modelId,
+      version: modelDetails.version,
+      sources,
+    });
+
+    // Modzy creates the job and queue f
