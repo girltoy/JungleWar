@@ -87,4 +87,5 @@ async function createJobWithEmbeddedInput() {
       sources,
     });
 
-    // Modzy creates the job and queue f
+    // Modzy creates the job and queue for processing. The job object contains all the info that you need to keep track
+    // of the process, the most important being the
