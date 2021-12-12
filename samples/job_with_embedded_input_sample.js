@@ -91,4 +91,6 @@ async function createJobWithEmbeddedInput() {
     // of the process, the most important being the job identifier and the job status.
     console.log("job: " + job.jobIdentifier + " " + job.status);
     // The job moves to SUBMITTED, meaning that Modzy acknowledged the job and sent it to the queue to be processed.
-    // We provide a helper method to listen until the job finis
+    // We provide a helper method to listen until the job finishes processing. It listens until the job finishes
+    // and moves to COMPLETED, CANCELED, or TIMEOUT.
+    await modzyClient.blockUntilJo
