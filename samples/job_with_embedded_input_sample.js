@@ -90,4 +90,5 @@ async function createJobWithEmbeddedInput() {
     // Modzy creates the job and queue for processing. The job object contains all the info that you need to keep track
     // of the process, the most important being the job identifier and the job status.
     console.log("job: " + job.jobIdentifier + " " + job.status);
-    // The job moves to SUBMITTED, meaning 
+    // The job moves to SUBMITTED, meaning that Modzy acknowledged the job and sent it to the queue to be processed.
+    // We provide a helper method to listen until the job finis
