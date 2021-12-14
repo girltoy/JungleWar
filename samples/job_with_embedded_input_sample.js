@@ -93,4 +93,8 @@ async function createJobWithEmbeddedInput() {
     // The job moves to SUBMITTED, meaning that Modzy acknowledged the job and sent it to the queue to be processed.
     // We provide a helper method to listen until the job finishes processing. It listens until the job finishes
     // and moves to COMPLETED, CANCELED, or TIMEOUT.
-    await modzyClient.blockUntilJo
+    await modzyClient.blockUntilJobComplete(job.jobIdentifier);
+
+    // Get the results:
+    // Check the status of the job. Jobs may be canceled or may reach a timeout.
+    if (job
