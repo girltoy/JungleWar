@@ -98,4 +98,6 @@ async function createJobWithEmbeddedInput() {
     // Get the results:
     // Check the status of the job. Jobs may be canceled or may reach a timeout.
     if (job.status === "COMPLETED") {
-      // A completed job means that all the inputs were processed by the model. Check the result
+      // A completed job means that all the inputs were processed by the model. Check the results for each
+      // input key provided in the source object to see the model output.
+      let result = await modzyClient.getResult(job.jobIden
