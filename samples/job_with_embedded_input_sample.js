@@ -97,4 +97,5 @@ async function createJobWithEmbeddedInput() {
 
     // Get the results:
     // Check the status of the job. Jobs may be canceled or may reach a timeout.
-    if (job
+    if (job.status === "COMPLETED") {
+      // A completed job means that all the inputs were processed by the model. Check the result
