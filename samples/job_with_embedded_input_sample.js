@@ -100,4 +100,7 @@ async function createJobWithEmbeddedInput() {
     if (job.status === "COMPLETED") {
       // A completed job means that all the inputs were processed by the model. Check the results for each
       // input key provided in the source object to see the model output.
-      let result = await modzyClient.getResult(job.jobIden
+      let result = await modzyClient.getResult(job.jobIdentifier);
+      // The result object has some useful info:
+      console.log(
+        `Result: finished:  ${result.finished}, 
