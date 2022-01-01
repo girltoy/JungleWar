@@ -105,4 +105,6 @@ async function createJobWithEmbeddedInput() {
       console.log(
         `Result: finished:  ${result.finished}, total: ${result.total}, completed: ${result.completed}, failed: ${result.failed}`
       );
-      // Notice that we are itera
+      // Notice that we are iterating through the same input source keys
+      for (const key in sources) {
+        // The results object has the individual results
