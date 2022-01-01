@@ -103,4 +103,6 @@ async function createJobWithEmbeddedInput() {
       let result = await modzyClient.getResult(job.jobIdentifier);
       // The result object has some useful info:
       console.log(
-        `Result: finished:  ${result.finished}, 
+        `Result: finished:  ${result.finished}, total: ${result.total}, completed: ${result.completed}, failed: ${result.failed}`
+      );
+      // Notice that we are itera
