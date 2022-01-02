@@ -107,4 +107,6 @@ async function createJobWithEmbeddedInput() {
       );
       // Notice that we are iterating through the same input source keys
       for (const key in sources) {
-        // The results object has the individual results
+        // The results object has the individual results of each job input. In this case the output key is called
+        // results.json, so we can get the results as follows:
+        if (result.results[
