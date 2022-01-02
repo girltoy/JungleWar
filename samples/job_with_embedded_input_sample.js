@@ -109,4 +109,6 @@ async function createJobWithEmbeddedInput() {
       for (const key in sources) {
         // The results object has the individual results of each job input. In this case the output key is called
         // results.json, so we can get the results as follows:
-        if (result.results[
+        if (result.results[key]) {
+          let model_res = result.results[key]["results.json"];
+          // The output for this model comes in a JSON format, 
