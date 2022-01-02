@@ -111,4 +111,7 @@ async function createJobWithEmbeddedInput() {
         // results.json, so we can get the results as follows:
         if (result.results[key]) {
           let model_res = result.results[key]["results.json"];
-          // The output for this model comes in a JSON format, 
+          // The output for this model comes in a JSON format, so we can directly log the results:
+          console.log(`    ${key}: ${JSON.stringify(model_res)}`);
+        } else {
+          // If the model rai
