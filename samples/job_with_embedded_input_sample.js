@@ -116,4 +116,10 @@ async function createJobWithEmbeddedInput() {
         } else {
           // If the model raises an error, we can get the specific error message:
           console.warn(`    ${key}: failure ${result.failures[key]["error"]}`);
- 
+        }
+      }
+    } else {
+      console.warn(`The job ends with status ${job.status}`);
+    }
+  } catch (error) {
+    
