@@ -114,4 +114,6 @@ async function createJobWithEmbeddedInput() {
           // The output for this model comes in a JSON format, so we can directly log the results:
           console.log(`    ${key}: ${JSON.stringify(model_res)}`);
         } else {
-          // If the model rai
+          // If the model raises an error, we can get the specific error message:
+          console.warn(`    ${key}: failure ${result.failures[key]["error"]}`);
+ 
