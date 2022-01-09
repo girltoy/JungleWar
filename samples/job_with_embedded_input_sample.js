@@ -122,4 +122,8 @@ async function createJobWithEmbeddedInput() {
       console.warn(`The job ends with status ${job.status}`);
     }
   } catch (error) {
-    
+    console.error(error);
+  }
+}
+
+createJobWithEmbeddedInput();
