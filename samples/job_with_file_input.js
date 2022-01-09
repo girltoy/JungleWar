@@ -6,4 +6,9 @@ const { ModzyClient } = require("@modzy/modzy-sdk");
 const API_KEY = process.env.MODZY_API_KEY;
 
 // Client initialization:
-// Initialize the ApiClient instance with the API_KEY. We're us
+// Initialize the ApiClient instance with the API_KEY. We're using app.modzy.com, so a
+// `url` is not specified
+const modzyClient = new ModzyClient({
+  apiKey: API_KEY,
+  logging: "on",
+});
