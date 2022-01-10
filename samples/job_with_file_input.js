@@ -12,3 +12,8 @@ const modzyClient = new ModzyClient({
   apiKey: API_KEY,
   logging: "on",
 });
+
+// This is async function that will do all the work
+async function createJobWithFileInput() {
+  try {
+    // Look up the model id and 
