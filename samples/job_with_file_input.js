@@ -16,4 +16,7 @@ const modzyClient = new ModzyClient({
 // This is async function that will do all the work
 async function createJobWithFileInput() {
   try {
-    // Look up the model id and 
+    // Look up the model id and latest version
+    const { modelId, latestActiveVersion } = await modzyClient.getModelByName(
+      "Image-Based Geolocation"
+    )
