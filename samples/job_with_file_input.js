@@ -19,4 +19,9 @@ async function createJobWithFileInput() {
     // Look up the model id and latest version
     const { modelId, latestActiveVersion } = await modzyClient.getModelByName(
       "Image-Based Geolocation"
-    )
+    );
+
+    // Submit a job to the Image-Based Geolocation model
+    const { jobIdentifier } = await modzyClient.submitJobFile({
+      modelId,
+      versi
