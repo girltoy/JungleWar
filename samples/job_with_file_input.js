@@ -36,4 +36,11 @@ async function createJobWithFileInput() {
     await modzyClient.blockUntilJobComplete(jobIdentifier);
 
     // Get the results
-    const results = await modzyClient.getResult(j
+    const results = await modzyClient.getResult(jobIdentifier);
+    console.log("results", results);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+createJobWithFileInput();
