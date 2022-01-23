@@ -13,3 +13,35 @@ const modzyClient = new ModzyClient({
   apiKey: API_KEY,
   logging: "on",
 });
+
+// This is async function that will do all the work
+async function createJobWithTextInput() {
+  try {
+    // Look up the model id and latest version
+    const { modelId, latestActiveVersion } = await modzyClient.getModelByName(
+      "Sentiment Analysis"
+    );
+
+    // Submit a job to the Sentiment Analysis model
+    const { jobIdentifier } = await modzyClient.submitJobText({
+      modelId,
+      version: latestActiveVersion,
+      sources: {
+        myInput: {
+          "input.txt": "Sometimes I really hate ribs",
+        },
+      },
+    });
+
+    // Wait until the job is complete
+    await modzyClient.blockUntilJobComplete(jobIdentifier);
+
+    // Get the results
+    const results = await modzyClient.getResult(jobIdentifier);
+    console.log("results", results);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+createJobWithTextInput();
