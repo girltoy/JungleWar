@@ -24,4 +24,12 @@ async function createJobWithFileInput() {
     // Submit a job to the Image-Based Geolocation model
     const { jobIdentifier } = await modzyClient.submitJobFile({
       modelId,
-      versi
+      version: latestActiveVersion,
+      sources: {
+        myInput: {
+          image: "./moscow.jpg",
+        },
+      },
+    });
+
+    // Wait unt
