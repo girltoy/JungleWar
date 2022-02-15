@@ -13,4 +13,7 @@ const modzyClient = new ModzyClient({
   logging: "on",
 });
 
-async function modelsSa
+async function modelsSample() {
+  // Get all active models
+  const activeModels = await modzyClient.getActiveModels();
+  console.log("All
