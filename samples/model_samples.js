@@ -16,4 +16,7 @@ const modzyClient = new ModzyClient({
 async function modelsSample() {
   // Get all active models
   const activeModels = await modzyClient.getActiveModels();
-  console.log("All
+  console.log("All active models", activeModels);
+
+  // Get models that meet some criterial
+  const openSourceModels = await modzyClient.getMod
