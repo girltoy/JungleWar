@@ -19,4 +19,10 @@ async function modelsSample() {
   console.log("All active models", activeModels);
 
   // Get models that meet some criterial
-  const openSourceModels = await modzyClient.getMod
+  const openSourceModels = await modzyClient.getModels({
+    author: "Open Source",
+    isActive: true,
+  });
+  console.log("Open source models", openSourceModels);
+
+  // Get model by name. The name doesn't have to be e
