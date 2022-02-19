@@ -25,4 +25,8 @@ async function modelsSample() {
   });
   console.log("Open source models", openSourceModels);
 
-  // Get model by name. The name doesn't have to be e
+  // Get model by name. The name doesn't have to be exact; it uses the closest match
+  const audioFingerprintingModel = modzyClient.getModelByName(
+    "Audio Fingerprinting"
+  );
+  con
