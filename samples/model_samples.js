@@ -33,4 +33,7 @@ async function modelsSample() {
 
   // Get model info by it's modelId (this is the text to speech model on app.modzy.com)
   // This will be information that pertains to all version of this model
-  const textToSpeechModels = await modzyClient
+  const textToSpeechModels = await modzyClient.getModelById("uvdncymn6q");
+  console.log("All Text to Speech Conversion models", textToSpeechModels);
+
+  // Get a list of all the versions
