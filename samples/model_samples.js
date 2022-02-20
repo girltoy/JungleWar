@@ -31,4 +31,6 @@ async function modelsSample() {
   );
   console.log("Audio Fingerprinting Model", audioFingerprintingModel);
 
-  // Get model info by it's modelId (this is the text to speech m
+  // Get model info by it's modelId (this is the text to speech model on app.modzy.com)
+  // This will be information that pertains to all version of this model
+  const textToSpeechModels = await modzyClient
