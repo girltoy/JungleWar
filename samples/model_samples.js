@@ -29,4 +29,6 @@ async function modelsSample() {
   const audioFingerprintingModel = modzyClient.getModelByName(
     "Audio Fingerprinting"
   );
-  con
+  console.log("Audio Fingerprinting Model", audioFingerprintingModel);
+
+  // Get model info by it's modelId (this is the text to speech m
