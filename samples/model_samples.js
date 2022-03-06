@@ -38,4 +38,7 @@ async function modelsSample() {
 
   // Get a list of all the versions a model id has
   const versions = await modzyClient.getModelVersionsById("uvdncymn6q");
-  console.log("Text to Speech Conve
+  console.log("Text to Speech Conversion versions", versions);
+
+  // Get full details for a specific version of a model
+  const textToSpeechDetails = awa
