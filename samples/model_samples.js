@@ -36,4 +36,6 @@ async function modelsSample() {
   const textToSpeechModels = await modzyClient.getModelById("uvdncymn6q");
   console.log("All Text to Speech Conversion models", textToSpeechModels);
 
-  // Get a list of all the versions
+  // Get a list of all the versions a model id has
+  const versions = await modzyClient.getModelVersionsById("uvdncymn6q");
+  console.log("Text to Speech Conve
