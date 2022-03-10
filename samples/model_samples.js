@@ -45,4 +45,7 @@ async function modelsSample() {
     modelId: "uvdncymn6q",
     version: "0.0.3",
   });
-  console.log("Text to Speech Conversion v
+  console.log("Text to Speech Conversion v0.0.3", textToSpeechDetails);
+
+  // Get the input sample for a specific version of model
+  const inputSample = await modzyCli
