@@ -41,4 +41,8 @@ async function modelsSample() {
   console.log("Text to Speech Conversion versions", versions);
 
   // Get full details for a specific version of a model
-  const textToSpeechDetails = awa
+  const textToSpeechDetails = await modzyClient.getModelDetails({
+    modelId: "uvdncymn6q",
+    version: "0.0.3",
+  });
+  console.log("Text to Speech Conversion v
