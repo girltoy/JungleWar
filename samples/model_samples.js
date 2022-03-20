@@ -54,3 +54,6 @@ async function modelsSample() {
   });
   console.log("inputSample", inputSample);
 
+  // Get the output sample for a specific version of model
+  const outputSample = await modzyClient.getModelVersionOutputSample({
+    modelId: "uv
