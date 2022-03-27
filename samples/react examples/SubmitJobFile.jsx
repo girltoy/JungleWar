@@ -10,4 +10,9 @@ import { ModzyClient } from "@modzy/modzy-sdk";
 export default function SubmitJobFile() {
   const [output, setOutput] = useState();
 
-  // This function is called once t
+  // This function is called once the user submits the form
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    // initialize the client
+    const modzyClient = new M
