@@ -15,4 +15,10 @@ export default function SubmitJobFile() {
     event.preventDefault();
 
     // initialize the client
-    const modzyClient = new M
+    const modzyClient = new ModzyClient({
+      apiKey: "XXXXXX.XXXXXX", // Your API key here
+    });
+
+    try {
+      // get the file from the submit event
+      const file = new F
