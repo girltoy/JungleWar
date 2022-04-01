@@ -21,4 +21,8 @@ export default function SubmitJobFile() {
 
     try {
       // get the file from the submit event
-      const file = new F
+      const file = new FormData(event.currentTarget).get("fileInput");
+
+      // If there's a file, then we submit the job
+      if (file) {
+       
