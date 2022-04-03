@@ -28,4 +28,11 @@ export default function SubmitJobFile() {
         const { jobIdentifier } = await modzyClient.submitJobFile({
           modelId: "aevbu1h3yw",
           version: "1.0.1",
-     
+          sources: {
+            [file.name]: {
+              image: file,
+            },
+          },
+        });
+
+        // Wait for the job 
