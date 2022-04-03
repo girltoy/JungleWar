@@ -35,4 +35,8 @@ export default function SubmitJobFile() {
           },
         });
 
-        // Wait for the job 
+        // Wait for the job to complete
+        await modzyClient.blockUntilJobComplete(jobIdentifier);
+
+        // Get the output contents
+        const outputConten
