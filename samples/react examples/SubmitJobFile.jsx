@@ -25,4 +25,7 @@ export default function SubmitJobFile() {
 
       // If there's a file, then we submit the job
       if (file) {
-       
+        const { jobIdentifier } = await modzyClient.submitJobFile({
+          modelId: "aevbu1h3yw",
+          version: "1.0.1",
+     
