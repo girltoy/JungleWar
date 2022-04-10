@@ -43,3 +43,10 @@ export default function SubmitJobFile() {
           jobId: jobIdentifier,
           inputKey: file.name,
           outputName: "results.json",
+        });
+
+        // Save the output contents in a piece of state
+        setOutput(outputContents);
+      }
+    } catch (error) {
+   
