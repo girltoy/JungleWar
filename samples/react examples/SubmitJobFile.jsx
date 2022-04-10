@@ -49,4 +49,11 @@ export default function SubmitJobFile() {
         setOutput(outputContents);
       }
     } catch (error) {
-   
+      console.error(error);
+    }
+  }
+
+  return (
+    <div style={{ padding: "32px" }}>
+      <form onSubmit={handleSubmit}>
+        <input typ
