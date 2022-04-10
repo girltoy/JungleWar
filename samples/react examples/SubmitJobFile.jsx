@@ -39,4 +39,7 @@ export default function SubmitJobFile() {
         await modzyClient.blockUntilJobComplete(jobIdentifier);
 
         // Get the output contents
-        const outputConten
+        const outputContents = await modzyClient.getOutputContents({
+          jobId: jobIdentifier,
+          inputKey: file.name,
+          outputName: "results.json",
