@@ -56,4 +56,8 @@ export default function SubmitJobFile() {
   return (
     <div style={{ padding: "32px" }}>
       <form onSubmit={handleSubmit}>
-        <input typ
+        <input type="file" name="fileInput" />
+        <button type="submit">Submit</button>
+      </form>
+
+      <hr style={{ marginTop: "32px", marginBottom: "32px
