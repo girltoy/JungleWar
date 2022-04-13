@@ -60,4 +60,11 @@ export default function SubmitJobFile() {
         <button type="submit">Submit</button>
       </form>
 
-      <hr style={{ marginTop: "32px", marginBottom: "32px
+      <hr style={{ marginTop: "32px", marginBottom: "32px" }} />
+
+      {!!output && (
+        <>
+          <div>Contents of results.json:</div>
+          <div
+            style={{
+              padd
