@@ -67,4 +67,9 @@ export default function SubmitJobFile() {
           <div>Contents of results.json:</div>
           <div
             style={{
-              padd
+              padding: "16px",
+              backgroundColor: "#efefef",
+              marginTop: "16px",
+            }}
+          >
+            <pr
