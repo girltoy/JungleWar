@@ -72,4 +72,10 @@ export default function SubmitJobFile() {
               marginTop: "16px",
             }}
           >
-            <pr
+            <pre>{JSON.stringify(output, null, 2)}</pre>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
