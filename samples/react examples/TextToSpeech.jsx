@@ -10,4 +10,9 @@ import { ModzyClient } from "@modzy/modzy-sdk";
 export default function TextToSpeech() {
   const [isWorking, setWorking] = useState(false);
 
-  // This function 
+  // This function is called once the user submits the form
+  async function handleSubmit(event) {
+    event.preventDefault();
+    setWorking(true);
+
+   
