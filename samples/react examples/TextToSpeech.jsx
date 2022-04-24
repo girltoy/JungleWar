@@ -15,4 +15,9 @@ export default function TextToSpeech() {
     event.preventDefault();
     setWorking(true);
 
-   
+    // initialize the client
+    const modzyClient = new ModzyClient({
+      apiKey: "XXXXXXXX.XXXXXXXXXXXXX", // Your API key here
+    });
+
+  
