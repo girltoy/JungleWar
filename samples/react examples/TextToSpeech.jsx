@@ -20,4 +20,7 @@ export default function TextToSpeech() {
       apiKey: "XXXXXXXX.XXXXXXXXXXXXX", // Your API key here
     });
 
-  
+    try {
+      // get the contents of the textarea
+      const text = new FormData(event.currentTarget).get("textInput");
+      console.log("te
