@@ -23,4 +23,8 @@ export default function TextToSpeech() {
     try {
       // get the contents of the textarea
       const text = new FormData(event.currentTarget).get("textInput");
-      console.log("te
+      console.log("text", text);
+
+      // If there text, then we submit the job
+      if (text) {
+        const { jobIdentifier } = await modzyClient
