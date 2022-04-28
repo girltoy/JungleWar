@@ -38,4 +38,7 @@ export default function TextToSpeech() {
         });
 
         // Wait for the job to complete
-        await modzyClient.blo
+        await modzyClient.blockUntilJobComplete(jobIdentifier);
+
+        // Get the output contents with the responseType of "blob" because it's a binary
+      
