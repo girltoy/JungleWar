@@ -27,4 +27,9 @@ export default function TextToSpeech() {
 
       // If there text, then we submit the job
       if (text) {
-        const { jobIdentifier } = await modzyClient
+        const { jobIdentifier } = await modzyClient.submitJobText({
+          modelId: "uvdncymn6q",
+          version: "0.0.3",
+          sources: {
+            myInput: {
+              
