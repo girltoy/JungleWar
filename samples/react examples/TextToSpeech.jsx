@@ -32,4 +32,10 @@ export default function TextToSpeech() {
           version: "0.0.3",
           sources: {
             myInput: {
-              
+              "input.txt": text,
+            },
+          },
+        });
+
+        // Wait for the job to complete
+        await modzyClient.blo
