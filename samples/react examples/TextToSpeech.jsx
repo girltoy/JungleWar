@@ -49,4 +49,7 @@ export default function TextToSpeech() {
         });
 
         // create a hidden link that will download the file
-        c
+        const url = window.URL.createObjectURL(
+          new Blob([speechContents], { type: "audio/wav" })
+        );
+        const li
