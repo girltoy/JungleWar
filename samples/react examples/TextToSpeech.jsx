@@ -43,4 +43,10 @@ export default function TextToSpeech() {
         // Get the output contents with the responseType of "blob" because it's a binary
         const speechContents = await modzyClient.getOutputContents({
           jobId: jobIdentifier,
-          inputKey: "myInput
+          inputKey: "myInput",
+          outputName: "results.wav",
+          responseType: "blob",
+        });
+
+        // create a hidden link that will download the file
+        c
