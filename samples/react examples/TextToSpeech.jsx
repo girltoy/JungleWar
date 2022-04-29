@@ -41,4 +41,6 @@ export default function TextToSpeech() {
         await modzyClient.blockUntilJobComplete(jobIdentifier);
 
         // Get the output contents with the responseType of "blob" because it's a binary
-      
+        const speechContents = await modzyClient.getOutputContents({
+          jobId: jobIdentifier,
+          inputKey: "myInput
