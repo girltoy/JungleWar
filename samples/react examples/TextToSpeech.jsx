@@ -55,4 +55,11 @@ export default function TextToSpeech() {
         const link = document.createElement("a");
         link.href = url;
         link.setAttribute("download", "results.wav");
-        document.body.
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+      }
+    } catch (error) {
+      console.error(error);
+    } finally {
+ 
