@@ -52,4 +52,7 @@ export default function TextToSpeech() {
         const url = window.URL.createObjectURL(
           new Blob([speechContents], { type: "audio/wav" })
         );
-        const li
+        const link = document.createElement("a");
+        link.href = url;
+        link.setAttribute("download", "results.wav");
+        document.body.
