@@ -79,4 +79,9 @@ export default function TextToSpeech() {
           <textarea id="textInput" name="textInput" rows="4" cols="50" />
         </div>
         <button type="submit" disabled={isWorking}>
-          {isWorking ? "G
+          {isWorking ? "Getting result ..." : "Submit"}
+        </button>
+      </form>
+    </div>
+  );
+}
