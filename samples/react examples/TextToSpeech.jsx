@@ -76,4 +76,7 @@ export default function TextToSpeech() {
           >
             Text to be converted to speech
           </label>
-          <textarea id="tex
+          <textarea id="textInput" name="textInput" rows="4" cols="50" />
+        </div>
+        <button type="submit" disabled={isWorking}>
+          {isWorking ? "G
