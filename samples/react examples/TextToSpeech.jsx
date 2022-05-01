@@ -72,4 +72,8 @@ export default function TextToSpeech() {
         <div style={{ marginBottom: "16px" }}>
           <label
             htmlFor="textInput"
-            style={{ display: "block
+            style={{ display: "block", marginBottom: "4px" }}
+          >
+            Text to be converted to speech
+          </label>
+          <textarea id="tex
