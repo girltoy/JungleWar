@@ -21,4 +21,8 @@ export class ApiError {
   error: CustomErrorType | null;
   message: string;
   code: number;
- 
+  url: string;
+
+  constructor(
+    error: CustomErrorType | null,
+    { url, code = 500, message = "Unexpected" }: ApiErrorConf
