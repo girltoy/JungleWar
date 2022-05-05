@@ -10,4 +10,15 @@ type CustomErrorType = {
     data: {
       message: string;
       statusCode: number;
-    }
+    };
+  };
+  config: {
+    url: string;
+  };
+};
+
+export class ApiError {
+  error: CustomErrorType | null;
+  message: string;
+  code: number;
+ 
