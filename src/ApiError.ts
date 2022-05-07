@@ -25,4 +25,10 @@ export class ApiError {
 
   constructor(
     error: CustomErrorType | null,
-    { url, code = 500, message = "Unexpected" }: ApiErrorConf
+    { url, code = 500, message = "Unexpected" }: ApiErrorConfig = {}
+  ) {
+    this.message =
+      message ||
+      error?.response?.data?.message ||
+      error?.message ||
+      "no message
