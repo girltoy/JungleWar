@@ -34,4 +34,10 @@ export class ApiError {
       "no message";
     this.code = code || error?.response?.data?.statusCode || 0;
     this.url = url || error?.config?.url || "no url";
-    this.error = err
+    this.error = error;
+  }
+
+  toString() {
+    return `${this.code} :: ${this.message} :: ${this.url}`;
+  }
+}
