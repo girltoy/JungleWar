@@ -10,3 +10,9 @@ import type {
   JobHistoryResponseItem,
   SubmitJobParams,
   SubmitJobTextParams,
+  SubmitJobResponse,
+  GetOutputContentsParams,
+  SubmitJobJDBCParams,
+  SubmitJobAwsS3Params,
+  SubmitJobEmbeddedParams,
+  Eng
