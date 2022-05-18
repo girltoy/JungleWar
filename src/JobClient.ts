@@ -22,4 +22,12 @@ import type {
 
 export class JobClient {
   logger: Logger;
-  readonly base
+  readonly baseUrl: string;
+  readonly headers: {
+    Authorization: string;
+  };
+
+  /**
+   * Creates a JobClient
+   * @param {Object} config object
+   * @para
