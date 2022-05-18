@@ -30,4 +30,7 @@ export class JobClient {
   /**
    * Creates a JobClient
    * @param {Object} config object
-   * @para
+   * @param {string} config.url - base url of modzy api (i.e.: https://app.modzy.com)
+   * @param {string} config.apiKey - user's API key
+   */
+  constructo
