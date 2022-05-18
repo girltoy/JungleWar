@@ -15,4 +15,11 @@ import type {
   SubmitJobJDBCParams,
   SubmitJobAwsS3Params,
   SubmitJobEmbeddedParams,
-  Eng
+  EnginesResponse,
+  GetJobResponse,
+  GetResultResponse,
+} from "./types";
+
+export class JobClient {
+  logger: Logger;
+  readonly base
