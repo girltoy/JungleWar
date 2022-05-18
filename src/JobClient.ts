@@ -33,4 +33,7 @@ export class JobClient {
    * @param {string} config.url - base url of modzy api (i.e.: https://app.modzy.com)
    * @param {string} config.apiKey - user's API key
    */
-  constructo
+  constructor({ url = DEFAULT_URL, apiKey, logging }: ClassInitiator) {
+    this.baseUrl = url;
+    this.headers = {
+      Authorization: `ApiKey ${apiKe
