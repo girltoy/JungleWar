@@ -54,4 +54,7 @@ export class JobClient {
     page = 1,
     perPage = 100,
     direction = "DESC",
-    s
+    sortBy = "createdAt",
+  }: GetJobHistoryParams = {}): Promise<JobHistoryResponseItem[]> {
+    const defaultStartDate = new Date();
+    defaultStartDate.s
