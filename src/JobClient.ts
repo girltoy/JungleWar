@@ -45,4 +45,13 @@ export class JobClient {
    * Call the Modzy API Service and query on the history of jobs
    */
   getJobHistory({
-  
+    user,
+    accessKey,
+    startDate,
+    endDate,
+    model,
+    status,
+    page = 1,
+    perPage = 100,
+    direction = "DESC",
+    s
