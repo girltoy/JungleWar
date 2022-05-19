@@ -36,4 +36,13 @@ export class JobClient {
   constructor({ url = DEFAULT_URL, apiKey, logging }: ClassInitiator) {
     this.baseUrl = url;
     this.headers = {
-      Authorization: `ApiKey ${apiKe
+      Authorization: `ApiKey ${apiKey}`,
+    };
+    this.logger = new Logger(logging);
+  }
+
+  /**
+   * Call the Modzy API Service and query on the history of jobs
+   */
+  getJobHistory({
+  
