@@ -62,4 +62,8 @@ export class JobClient {
     const params = {
       user: user,
       accessKey: accessKey,
-      startDate: startD
+      startDate: startDate || defaultStartDate.toISOString(),
+      endDate: endDate,
+      model: model,
+      status: status,
+      "sort-by": sortBy
