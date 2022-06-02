@@ -66,4 +66,11 @@ export class JobClient {
       endDate: endDate,
       model: model,
       status: status,
-      "sort-by": sortBy
+      "sort-by": sortBy,
+      direction: direction,
+      page: page,
+      "per-page": perPage,
+    };
+
+    let key: keyof typeof params;
+
