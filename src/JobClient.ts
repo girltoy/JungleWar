@@ -79,3 +79,7 @@ export class JobClient {
       if (params?.[key] == null) {
         delete params[key];
       }
+    }
+
+    const requestUrl = `${this.baseUrl}/api/jobs/history`;
+    this.logger.debug(`getJobHistory(${params}) GET ${requestUr
