@@ -94,4 +94,10 @@ export class JobClient {
         return response.data;
       })
       .catch((error) => {
-        this.
+        this.logger.error("getJobHistory error", error);
+        throw new ApiError(error);
+      });
+  }
+
+  /**
+   * Call the Modzy API Service that ret
