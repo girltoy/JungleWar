@@ -90,4 +90,8 @@ export class JobClient {
         params,
       })
       .then((response) => {
-    
+        this.logger.info("getJobHistory response", response);
+        return response.data;
+      })
+      .catch((error) => {
+        this.
