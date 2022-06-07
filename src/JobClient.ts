@@ -82,4 +82,12 @@ export class JobClient {
     }
 
     const requestUrl = `${this.baseUrl}/api/jobs/history`;
-    this.logger.debug(`getJobHistory(${params}) GET ${requestUr
+    this.logger.debug(`getJobHistory(${params}) GET ${requestUrl}`);
+
+    return axios
+      .get(requestUrl, {
+        headers: this.headers,
+        params,
+      })
+      .then((response) => {
+    
