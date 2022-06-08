@@ -111,3 +111,7 @@ export class JobClient {
       .then((response) => {
         this.logger.info("getJobHistory response", response);
         return response.data;
+      })
+      .catch((error) => {
+        this.logger.error("getJobHistory error", error);
+        throw new ApiError(error)
