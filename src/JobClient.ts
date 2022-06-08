@@ -107,4 +107,7 @@ export class JobClient {
     this.logger.debug(`getJob GET ${requestUrl}`);
 
     return axios
-      .get(requestUrl, { headers: this
+      .get(requestUrl, { headers: this.headers })
+      .then((response) => {
+        this.logger.info("getJobHistory response", response);
+        return response.data;
