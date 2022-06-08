@@ -100,4 +100,7 @@ export class JobClient {
   }
 
   /**
-   * Call the Modzy API Service that ret
+   * Call the Modzy API Service that return a job instance by it's identifier
+   */
+  getJob(jobId: string): Promise<GetJobResponse> {
+    const requestUrl = `${this.baseUrl}/api/job
