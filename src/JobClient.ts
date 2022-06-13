@@ -114,4 +114,10 @@ export class JobClient {
       })
       .catch((error) => {
         this.logger.error("getJobHistory error", error);
-        throw new ApiError(error)
+        throw new ApiError(error);
+      });
+  }
+
+  getResult(jobId: string): Promise<GetResultResponse> {
+    const requestUrl = `${this.baseUrl}/api/results/${jobId}`;
+   
