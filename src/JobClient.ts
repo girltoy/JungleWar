@@ -120,4 +120,9 @@ export class JobClient {
 
   getResult(jobId: string): Promise<GetResultResponse> {
     const requestUrl = `${this.baseUrl}/api/results/${jobId}`;
+    this.logger.debug(`getResult GET ${requestUrl}`);
+
+    return axios
+      .get(requestUrl, { headers: this.headers })
+      .then((response) => {
    
