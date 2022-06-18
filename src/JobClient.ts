@@ -129,4 +129,12 @@ export class JobClient {
         return response.data;
       })
       .catch((error) => {
-        this.logger.e
+        this.logger.error("getResult error", error);
+        throw new ApiError(error);
+      });
+  }
+
+  getOutputContents({
+    jobId,
+    inputKey,
+    output
