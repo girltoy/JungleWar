@@ -137,4 +137,7 @@ export class JobClient {
   getOutputContents({
     jobId,
     inputKey,
-    output
+    outputName,
+    responseType = "json",
+  }: GetOutputContentsParams): Promise<unknown> {
+    const requestUrl
