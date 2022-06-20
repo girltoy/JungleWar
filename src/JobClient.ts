@@ -140,4 +140,5 @@ export class JobClient {
     outputName,
     responseType = "json",
   }: GetOutputContentsParams): Promise<unknown> {
-    const requestUrl
+    const requestUrl = `${this.baseUrl}/api/results/${jobId}/datasource/${inputKey}/output/${outputName}`;
+    this.logger.debug(`getOutputContents G
