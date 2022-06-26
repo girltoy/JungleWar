@@ -141,4 +141,9 @@ export class JobClient {
     responseType = "json",
   }: GetOutputContentsParams): Promise<unknown> {
     const requestUrl = `${this.baseUrl}/api/results/${jobId}/datasource/${inputKey}/output/${outputName}`;
-    this.logger.debug(`getOutputContents G
+    this.logger.debug(`getOutputContents GET ${requestUrl}`);
+
+    return axios
+      .get(requestUrl, { responseType, headers: this.headers })
+      .then((response) => {
+ 
