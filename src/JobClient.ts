@@ -150,4 +150,10 @@ export class JobClient {
         return response.data;
       })
       .catch((error) => {
-        this.logge
+        this.logger.error("getOutputContents error", error);
+        throw new ApiError(error);
+      });
+  }
+
+  /**
+   * Utility method that waits until the job fi
