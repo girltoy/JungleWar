@@ -146,4 +146,8 @@ export class JobClient {
     return axios
       .get(requestUrl, { responseType, headers: this.headers })
       .then((response) => {
- 
+        this.logger.info("getOutputContents response", response);
+        return response.data;
+      })
+      .catch((error) => {
+        this.logge
