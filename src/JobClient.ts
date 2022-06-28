@@ -164,4 +164,7 @@ export class JobClient {
   blockUntilJobComplete(
     jobId: string,
     { timeout = 2000 } = {}
-  ): Pro
+  ): Promise<GetJobResponse> {
+    this.logger.debug(`blockUntilJobComplete ${jobId}, timeout ${timeout}`);
+
+    return new Promise((resolve, reject) => {
