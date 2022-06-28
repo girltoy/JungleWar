@@ -156,4 +156,7 @@ export class JobClient {
   }
 
   /**
-   * Utility method that waits until the job fi
+   * Utility method that waits until the job finishes.
+   *
+   * This method first checks the status of the job and waits until the job reaches
+   * the completed/error status by passing through
