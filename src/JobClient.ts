@@ -159,4 +159,9 @@ export class JobClient {
    * Utility method that waits until the job finishes.
    *
    * This method first checks the status of the job and waits until the job reaches
-   * the completed/error status by passing through
+   * the completed/error status by passing through the submitted and in_progress states.
+   */
+  blockUntilJobComplete(
+    jobId: string,
+    { timeout = 2000 } = {}
+  ): Pro
