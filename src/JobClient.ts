@@ -176,4 +176,8 @@ export class JobClient {
               updatedJob.status === "IN_PROGRESS"
             ) {
               resolve(
-             
+                this.blockUntilJobComplete(updatedJob.jobIdentifier, {
+                  timeout,
+                })
+              );
+     
