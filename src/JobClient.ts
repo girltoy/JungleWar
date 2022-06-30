@@ -172,4 +172,8 @@ export class JobClient {
         this.getJob(jobId)
           .then((updatedJob) => {
             if (
-          
+              updatedJob.status === "SUBMITTED" ||
+              updatedJob.status === "IN_PROGRESS"
+            ) {
+              resolve(
+             
