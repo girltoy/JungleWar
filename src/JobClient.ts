@@ -168,3 +168,8 @@ export class JobClient {
     this.logger.debug(`blockUntilJobComplete ${jobId}, timeout ${timeout}`);
 
     return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        this.getJob(jobId)
+          .then((updatedJob) => {
+            if (
+          
