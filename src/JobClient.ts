@@ -180,4 +180,6 @@ export class JobClient {
                   timeout,
                 })
               );
-     
+            }
+            this.logger.debug(
+              `blockUntilJobComplete(${updatedJob.jobIdentifier}}) :: returning :: ${u
