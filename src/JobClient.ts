@@ -187,4 +187,12 @@ export class JobClient {
             resolve(updatedJob);
           })
           .catch((error) => {
-            th
+            this.logger.error("blockUntilJobComplete error", error);
+            reject(error);
+          });
+      }, timeout);
+    });
+  }
+
+  /**
+   
