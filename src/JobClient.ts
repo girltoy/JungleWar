@@ -182,4 +182,9 @@ export class JobClient {
               );
             }
             this.logger.debug(
-              `blockUntilJobComplete(${updatedJob.jobIdentifier}}) :: returning :: ${u
+              `blockUntilJobComplete(${updatedJob.jobIdentifier}}) :: returning :: ${updatedJob.status}`
+            );
+            resolve(updatedJob);
+          })
+          .catch((error) => {
+            th
