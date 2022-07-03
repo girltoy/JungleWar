@@ -198,4 +198,10 @@ export class JobClient {
    * Cancel a job by its identifier
    */
   cancelJob(jobId: string): Promise<GetJobResponse> {
-    const requestUrl = `${this.baseUrl}/api/jobs/$
+    const requestUrl = `${this.baseUrl}/api/jobs/${jobId}`;
+    this.logger.debug(`cancelJob DELETE ${requestUrl}`);
+
+    return axios
+      .delete(requestUrl, {
+        headers: this.headers,
+ 
