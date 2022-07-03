@@ -204,4 +204,9 @@ export class JobClient {
     return axios
       .delete(requestUrl, {
         headers: this.headers,
- 
+      })
+      .then((response) => {
+        this.logger.info("cancelJob response", response);
+        return response.data;
+      })
+      .
