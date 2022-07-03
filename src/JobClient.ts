@@ -195,4 +195,7 @@ export class JobClient {
   }
 
   /**
-   
+   * Cancel a job by its identifier
+   */
+  cancelJob(jobId: string): Promise<GetJobResponse> {
+    const requestUrl = `${this.baseUrl}/api/jobs/$
