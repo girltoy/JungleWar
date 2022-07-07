@@ -209,4 +209,10 @@ export class JobClient {
         this.logger.info("cancelJob response", response);
         return response.data;
       })
-      .
+      .catch((error) => {
+        this.logger.error("cancelJob error", error);
+        throw new ApiError(error);
+      });
+  }
+
+  closeOpenJob(jobId: s
