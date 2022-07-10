@@ -215,4 +215,8 @@ export class JobClient {
       });
   }
 
-  closeOpenJob(jobId: s
+  closeOpenJob(jobId: string) {
+    const requestUrl = `${this.baseUrl}/api/jobs/${jobId}/close`;
+    this.logger.debug(`closeOpenJob POST ${requestUrl}`);
+
+    re
