@@ -219,4 +219,7 @@ export class JobClient {
     const requestUrl = `${this.baseUrl}/api/jobs/${jobId}/close`;
     this.logger.debug(`closeOpenJob POST ${requestUrl}`);
 
-    re
+    return axios
+      .post(requestUrl, {}, { headers: this.headers })
+      .then((response) => {
+        this.logger.info("closeOp
