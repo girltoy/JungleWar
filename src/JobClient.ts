@@ -226,4 +226,9 @@ export class JobClient {
         return response.data;
       })
       .catch((error) => {
-        this.log
+        this.logger.error("closeOpenJob error", error);
+        throw new ApiError(error);
+      });
+  }
+
+  getProcessingEngineStatus(): Promise
