@@ -222,4 +222,8 @@ export class JobClient {
     return axios
       .post(requestUrl, {}, { headers: this.headers })
       .then((response) => {
-        this.logger.info("closeOp
+        this.logger.info("closeOpenJob response", response);
+        return response.data;
+      })
+      .catch((error) => {
+        this.log
