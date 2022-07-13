@@ -242,4 +242,9 @@ export class JobClient {
         return response.data;
       })
       .catch((error) => {
-     
+        this.logger.error("getProcessingEngineStatus error", error);
+        throw new ApiError(error);
+      });
+  }
+
+  subm
