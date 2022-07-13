@@ -238,4 +238,8 @@ export class JobClient {
     return axios
       .get(requestUrl, { headers: this.headers })
       .then((response) => {
-      
+        this.logger.info("getProcessingEngineStatus response", response);
+        return response.data;
+      })
+      .catch((error) => {
+     
