@@ -233,4 +233,9 @@ export class JobClient {
 
   getProcessingEngineStatus(): Promise<EnginesResponse> {
     const requestUrl = `${this.baseUrl}/api/resources/processing/engines`;
-    this.logger.debug(`getProcessingEng
+    this.logger.debug(`getProcessingEngineStatus GET ${requestUrl}`);
+
+    return axios
+      .get(requestUrl, { headers: this.headers })
+      .then((response) => {
+      
