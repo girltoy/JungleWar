@@ -231,4 +231,6 @@ export class JobClient {
       });
   }
 
-  getProcessingEngineStatus(): Promise
+  getProcessingEngineStatus(): Promise<EnginesResponse> {
+    const requestUrl = `${this.baseUrl}/api/resources/processing/engines`;
+    this.logger.debug(`getProcessingEng
