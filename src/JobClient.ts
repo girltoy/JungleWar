@@ -247,4 +247,6 @@ export class JobClient {
       });
   }
 
-  subm
+  submitJob(job: SubmitJobParams): Promise<SubmitJobResponse> {
+    const requestUrl = `${this.baseUrl}/api/jobs`;
+    this.logger.de
