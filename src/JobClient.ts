@@ -255,4 +255,8 @@ export class JobClient {
       .post(requestUrl, job, {
         headers: this.headers,
       })
-      .then((resp
+      .then((response) => {
+        this.logger.info("submitJob response", response);
+        return response.data;
+      })
+      .catch((error) => 
