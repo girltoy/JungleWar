@@ -259,4 +259,11 @@ export class JobClient {
         this.logger.info("submitJob response", response);
         return response.data;
       })
-      .catch((error) => 
+      .catch((error) => {
+        this.logger.error("submitJob error", error);
+        throw new ApiError(error);
+      });
+  }
+
+  /**
+   * Create a new job for a spec
