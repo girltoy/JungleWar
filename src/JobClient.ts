@@ -266,4 +266,11 @@ export class JobClient {
   }
 
   /**
-   * Create a new job for a spec
+   * Create a new job for a specific model and version with the text inputs provided.
+   */
+  submitJobText({
+    modelId,
+    version,
+    sources,
+    explain = false,
+  }: Submit
