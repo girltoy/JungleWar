@@ -249,4 +249,10 @@ export class JobClient {
 
   submitJob(job: SubmitJobParams): Promise<SubmitJobResponse> {
     const requestUrl = `${this.baseUrl}/api/jobs`;
-    this.logger.de
+    this.logger.debug(`submitJob POST ${requestUrl}`);
+
+    return axios
+      .post(requestUrl, job, {
+        headers: this.headers,
+      })
+      .then((resp
