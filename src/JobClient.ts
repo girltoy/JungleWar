@@ -273,4 +273,8 @@ export class JobClient {
     version,
     sources,
     explain = false,
-  }: Submit
+  }: SubmitJobTextParams): Promise<SubmitJobResponse> {
+    this.logger.debug("submitJobText called");
+
+    return this.submitJob({
+      
