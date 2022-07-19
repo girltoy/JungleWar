@@ -277,4 +277,12 @@ export class JobClient {
     this.logger.debug("submitJobText called");
 
     return this.submitJob({
-      
+      model: {
+        identifier: modelId,
+        version: version,
+      },
+      explain: explain,
+      input: {
+        type: "text",
+        sources: sources,
+     
