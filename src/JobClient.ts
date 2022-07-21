@@ -285,4 +285,13 @@ export class JobClient {
       input: {
         type: "text",
         sources: sources,
-     
+      },
+    });
+  }
+
+  submitJobEmbedded({
+    modelId,
+    version,
+    sources,
+    explain = false,
+  }: SubmitJobEmbeddedParams): Promi
