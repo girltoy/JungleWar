@@ -294,4 +294,9 @@ export class JobClient {
     version,
     sources,
     explain = false,
-  }: SubmitJobEmbeddedParams): Promi
+  }: SubmitJobEmbeddedParams): Promise<SubmitJobResponse> {
+    this.logger.debug("submitJobEmbedded called");
+
+    return this.submitJob({
+      model: {
+        identifier: model
