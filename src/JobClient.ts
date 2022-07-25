@@ -311,4 +311,9 @@ export class JobClient {
   }
 
   /**
-   *
+   * Create a new job for a specific model and version with the aws-s3 inputs provided.
+   */
+  submitJobAwsS3({
+    modelId,
+    version,
+    a
