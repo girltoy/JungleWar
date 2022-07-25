@@ -316,4 +316,10 @@ export class JobClient {
   submitJobAwsS3({
     modelId,
     version,
-    a
+    accessKeyID,
+    secretAccessKey,
+    region,
+    sources,
+    explain = false,
+  }: SubmitJobAwsS3Params): Promise<SubmitJobResponse> {
+    this.logger.de
