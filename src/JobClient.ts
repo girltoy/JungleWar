@@ -299,4 +299,16 @@ export class JobClient {
 
     return this.submitJob({
       model: {
-        identifier: model
+        identifier: modelId,
+        version,
+      },
+      explain,
+      input: {
+        type: "embedded",
+        sources,
+      },
+    });
+  }
+
+  /**
+   *
