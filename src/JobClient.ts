@@ -322,4 +322,11 @@ export class JobClient {
     sources,
     explain = false,
   }: SubmitJobAwsS3Params): Promise<SubmitJobResponse> {
-    this.logger.de
+    this.logger.debug("submitJobAwsS3 called");
+
+    return this.submitJob({
+      model: {
+        identifier: modelId,
+        version: version,
+      },
+     
