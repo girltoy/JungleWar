@@ -334,4 +334,11 @@ export class JobClient {
         type: "aws-s3",
         accessKeyID: accessKeyID,
         secretAccessKey: secretAccessKey,
-      
+        region: region,
+        sources: sources,
+      },
+    });
+  }
+
+  /**
+   * Create a new job for a specific model and version with the jd
