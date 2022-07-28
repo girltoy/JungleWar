@@ -329,4 +329,9 @@ export class JobClient {
         identifier: modelId,
         version: version,
       },
-     
+      explain: explain,
+      input: {
+        type: "aws-s3",
+        accessKeyID: accessKeyID,
+        secretAccessKey: secretAccessKey,
+      
