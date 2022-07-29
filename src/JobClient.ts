@@ -344,4 +344,12 @@ export class JobClient {
    * Create a new job for a specific model and version with the jdbc query provided,
    *
    * Modzy will create a data source with the parameters provided and will execute
-   * the query, then will match the input
+   * the query, then will match the inputs defined of the model with the columns
+   * of the result set.
+   */
+  submitJobJDBC({
+    modelId,
+    version,
+    url,
+    username,
+    passwo
