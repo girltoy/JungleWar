@@ -357,4 +357,11 @@ export class JobClient {
     query,
     explain = false,
   }: SubmitJobJDBCParams): Promise<SubmitJobResponse> {
-    this.logger.debug("submi
+    this.logger.debug("submitJobJDBC called");
+
+    return this.submitJob({
+      model: {
+        identifier: modelId,
+        version: version,
+      },
+      expla
