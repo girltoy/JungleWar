@@ -352,4 +352,9 @@ export class JobClient {
     version,
     url,
     username,
-    passwo
+    password,
+    driver,
+    query,
+    explain = false,
+  }: SubmitJobJDBCParams): Promise<SubmitJobResponse> {
+    this.logger.debug("submi
