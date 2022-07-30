@@ -370,4 +370,9 @@ export class JobClient {
         url: url,
         username: username,
         password: password,
-        d
+        driver: driver,
+        query: query,
+      },
+    });
+  }
+}
