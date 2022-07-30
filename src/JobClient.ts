@@ -364,4 +364,10 @@ export class JobClient {
         identifier: modelId,
         version: version,
       },
-      expla
+      explain: explain,
+      input: {
+        type: "jdbc",
+        url: url,
+        username: username,
+        password: password,
+        d
