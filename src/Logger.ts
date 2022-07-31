@@ -11,4 +11,13 @@ export class Logger {
     } else if (loggingLevel === "verbose") {
       this.level = 2;
     }
-  
+  }
+
+  debug(...message: any[]) {
+    if (this.level >= 2) {
+      console.log("Modzy > ", ...message);
+    }
+  }
+
+  info(...message: any[]) {
+    i
