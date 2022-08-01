@@ -20,4 +20,11 @@ export class Logger {
   }
 
   info(...message: any[]) {
-    i
+    if (this.level >= 1) {
+      console.info("Modzy > ", ...message);
+    }
+  }
+
+  error(...message: any[]) {
+    if (this.level >= 1) {
+      co
