@@ -7,4 +7,10 @@ import { DEFAULT_URL } from "./constants";
 
 import type {
   ClassInitiator,
-  GetMod
+  GetModelsParams,
+  GetModelDetailsParams,
+  Model,
+  LatestModel,
+  GetModelByIdResponse,
+  GetModelDetailsResponse,
+  GetModelVersionsByIdResponse,
