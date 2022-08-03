@@ -14,3 +14,11 @@ import type {
   GetModelByIdResponse,
   GetModelDetailsResponse,
   GetModelVersionsByIdResponse,
+} from "./types";
+
+interface ModelWithDistance extends GetModelByIdResponse {
+  distance: number;
+}
+
+export class ModelClient {
+ 
