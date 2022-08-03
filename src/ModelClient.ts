@@ -29,4 +29,6 @@ export class ModelClient {
 
   /**
    * Creates a ModelClient
-   * @pa
+   * @param {Object} config object
+   * @param {string} config.url - base url of modzy api (i.e.: https://app.modzy.com)
+   * @param {string} config.apiKey - user's 
