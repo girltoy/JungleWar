@@ -21,4 +21,12 @@ interface ModelWithDistance extends GetModelByIdResponse {
 }
 
 export class ModelClient {
- 
+  logger: Logger;
+  readonly baseUrl: string;
+  readonly headers: {
+    Authorization: string;
+  };
+
+  /**
+   * Creates a ModelClient
+   * @pa
