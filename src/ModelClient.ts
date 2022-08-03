@@ -31,4 +31,8 @@ export class ModelClient {
    * Creates a ModelClient
    * @param {Object} config object
    * @param {string} config.url - base url of modzy api (i.e.: https://app.modzy.com)
-   * @param {string} config.apiKey - user's 
+   * @param {string} config.apiKey - user's API key
+   */
+  constructor({ url = DEFAULT_URL, apiKey, logging }: ClassInitiator) {
+    this.baseUrl = url;
+    this.headers = {
