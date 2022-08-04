@@ -36,3 +36,10 @@ export class ModelClient {
   constructor({ url = DEFAULT_URL, apiKey, logging }: ClassInitiator) {
     this.baseUrl = url;
     this.headers = {
+      Authorization: `ApiKey ${apiKey}`,
+    };
+    this.logger = new Logger(logging);
+  }
+
+  /**
+   * Get a list of models with very basic info such as modelId
