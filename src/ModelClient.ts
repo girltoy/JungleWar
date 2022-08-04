@@ -42,4 +42,7 @@ export class ModelClient {
   }
 
   /**
-   * Get a list of models with very basic info such as modelId
+   * Get a list of models with very basic info such as modelId, versions, and latestVersion
+   * based on specified params. Returns the first 500 models if no params are sent.
+   *
+   * @param {Object} criteria - Se
