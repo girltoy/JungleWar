@@ -45,4 +45,6 @@ export class ModelClient {
    * Get a list of models with very basic info such as modelId, versions, and latestVersion
    * based on specified params. Returns the first 500 models if no params are sent.
    *
-   * @param {Object} criteria - Se
+   * @param {Object} criteria - Search criteria object
+   * @param {string} criteria.modelId - The model's id
+   * @param {string} criteria.author - The model publ
