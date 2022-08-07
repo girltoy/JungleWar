@@ -52,4 +52,5 @@ export class ModelClient {
    * @param {string} criteria.name - The model's name
    * @param {string} criteria.description - The model's description
    * @param {boolean} criteria.isActive - If the model is active or not
-   * @para
+   * @param {boolean} criteria.isExpired - If the model is expired or not
+   * @param {boolean} criteria.isFeatured - If the model is featured or n
