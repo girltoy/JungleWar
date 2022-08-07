@@ -47,4 +47,6 @@ export class ModelClient {
    *
    * @param {Object} criteria - Search criteria object
    * @param {string} criteria.modelId - The model's id
-   * @param {string} criteria.author - The model publ
+   * @param {string} criteria.author - The model publisher's name
+   * @param {string} criteria.createdByEmail - The model publisher's email
+   * @param {string} criteria.name - The model'
