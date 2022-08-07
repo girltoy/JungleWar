@@ -49,4 +49,7 @@ export class ModelClient {
    * @param {string} criteria.modelId - The model's id
    * @param {string} criteria.author - The model publisher's name
    * @param {string} criteria.createdByEmail - The model publisher's email
-   * @param {string} criteria.name - The model'
+   * @param {string} criteria.name - The model's name
+   * @param {string} criteria.description - The model's description
+   * @param {boolean} criteria.isActive - If the model is active or not
+   * @para
