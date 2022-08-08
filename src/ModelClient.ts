@@ -55,4 +55,5 @@ export class ModelClient {
    * @param {boolean} criteria.isExpired - If the model is expired or not
    * @param {boolean} criteria.isFeatured - If the model is featured or not
    * @param {string} criteria.lastActiveDateTime - ISO 8601 date string representing when the model was last used
- 
+   * @param {string} criteria.expirationDateTime - ISO 8601 date string representing when the model expires
+   * @param {number} criteria.page - This
