@@ -56,4 +56,5 @@ export class ModelClient {
    * @param {boolean} criteria.isFeatured - If the model is featured or not
    * @param {string} criteria.lastActiveDateTime - ISO 8601 date string representing when the model was last used
    * @param {string} criteria.expirationDateTime - ISO 8601 date string representing when the model expires
-   * @param {number} criteria.page - This
+   * @param {number} criteria.page - This api call is paginated. This is the page of results to return
+   * @param {number} criteria.perPage - This api call is paginated. Thi
