@@ -57,4 +57,6 @@ export class ModelClient {
    * @param {string} criteria.lastActiveDateTime - ISO 8601 date string representing when the model was last used
    * @param {string} criteria.expirationDateTime - ISO 8601 date string representing when the model expires
    * @param {number} criteria.page - This api call is paginated. This is the page of results to return
-   * @param {number} criteria.perPage - This api call is paginated. Thi
+   * @param {number} criteria.perPage - This api call is paginated. This is number of results per page to return
+   * @param {string} criteria.sortBy - Sort the results by this key
+   * @param {"ASC" | "DESC"} 
