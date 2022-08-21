@@ -80,4 +80,10 @@ export class ModelClient {
     const params = {
       modelId,
       author,
- 
+      createdByEmail,
+      name,
+      description,
+      isActive,
+      isExpired,
+      isRecommended: isFeatured,
+      lastActive
