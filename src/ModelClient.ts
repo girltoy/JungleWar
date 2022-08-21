@@ -74,3 +74,10 @@ export class ModelClient {
     expirationDateTime,
     page,
     perPage = 500,
+    sortBy,
+    direction,
+  }: GetModelsParams = {}): Promise<Model[]> {
+    const params = {
+      modelId,
+      author,
+ 
