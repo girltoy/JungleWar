@@ -94,4 +94,9 @@ export class ModelClient {
       "per-page": perPage,
     };
 
-    let 
+    let key: keyof typeof params;
+
+    for (key in params) {
+      // catch both undefined and null
+      if (params?.[key] == null) {
+        
