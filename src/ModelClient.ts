@@ -99,4 +99,9 @@ export class ModelClient {
     for (key in params) {
       // catch both undefined and null
       if (params?.[key] == null) {
-        
+        delete params[key];
+      }
+    }
+
+    const requestUrl = `${this.baseUrl}/api/models`;
+    this.logger.debug(`getModels(${params}) GET
