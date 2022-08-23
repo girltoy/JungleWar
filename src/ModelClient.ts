@@ -86,4 +86,12 @@ export class ModelClient {
       isActive,
       isExpired,
       isRecommended: isFeatured,
-      lastActive
+      lastActiveDateTime,
+      expirationDateTime,
+      "sort-by": sortBy,
+      direction,
+      page: page,
+      "per-page": perPage,
+    };
+
+    let 
