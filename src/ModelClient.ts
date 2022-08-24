@@ -104,4 +104,11 @@ export class ModelClient {
     }
 
     const requestUrl = `${this.baseUrl}/api/models`;
-    this.logger.debug(`getModels(${params}) GET
+    this.logger.debug(`getModels(${params}) GET ${requestUrl}`);
+
+    return axios
+      .get(requestUrl, {
+        headers: this.headers,
+        params,
+      })
+      .th
