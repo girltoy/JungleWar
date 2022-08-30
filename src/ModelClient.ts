@@ -111,4 +111,9 @@ export class ModelClient {
         headers: this.headers,
         params,
       })
-      .th
+      .then(({ data }) => {
+        this.logger.info(`getModels response:`, data);
+        return data;
+      })
+      .catch((error) => {
+        
