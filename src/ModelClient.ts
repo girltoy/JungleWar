@@ -116,4 +116,11 @@ export class ModelClient {
         return data;
       })
       .catch((error) => {
-        
+        this.logger.error("getModels error:", error);
+        throw new ApiError(error);
+      });
+  }
+
+  /**
+   * DEPRECATED
+   * Get first 500 m
