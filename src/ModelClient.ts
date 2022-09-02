@@ -125,4 +125,6 @@ export class ModelClient {
    * DEPRECATED
    * Get first 500 models models, this method is a wrapper of
    * [ModelClient#getModels()]{@link ModelClient#getModels} method.
-   * @see {@link Mode
+   * @see {@link ModelClient#getModels}
+   * @returns {Model[]} - A list of all Modzy Models
+   * @throws {ApiError} Error if there is some
