@@ -127,4 +127,8 @@ export class ModelClient {
    * [ModelClient#getModels()]{@link ModelClient#getModels} method.
    * @see {@link ModelClient#getModels}
    * @returns {Model[]} - A list of all Modzy Models
-   * @throws {ApiError} Error if there is some
+   * @throws {ApiError} Error if there is something wrong with the service or the call
+   */
+  getAllModels() {
+    this.logger.debug("getAllModels called");
+    return this.getM
