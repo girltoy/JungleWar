@@ -131,4 +131,10 @@ export class ModelClient {
    */
   getAllModels() {
     this.logger.debug("getAllModels called");
-    return this.getM
+    return this.getModels();
+  }
+
+  /**
+   * Get a list of all active models and their names, descriptions, and active versions
+   */
+  getActiveModels(): Pr
