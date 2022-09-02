@@ -123,4 +123,6 @@ export class ModelClient {
 
   /**
    * DEPRECATED
-   * Get first 500 m
+   * Get first 500 models models, this method is a wrapper of
+   * [ModelClient#getModels()]{@link ModelClient#getModels} method.
+   * @see {@link Mode
