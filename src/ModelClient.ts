@@ -140,4 +140,11 @@ export class ModelClient {
   getActiveModels(): Promise<LatestModel[]> {
     const requestUrl = `${this.baseUrl}/api/models/latest`;
 
-    this.logger.debug(`getActiveModels GET ${requestUr
+    this.logger.debug(`getActiveModels GET ${requestUrl}`);
+
+    return axios
+      .get(requestUrl, {
+        headers: this.headers,
+      })
+      .then((response) => {
+        this.logg
