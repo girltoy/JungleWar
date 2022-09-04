@@ -137,4 +137,7 @@ export class ModelClient {
   /**
    * Get a list of all active models and their names, descriptions, and active versions
    */
-  getActiveModels(): Pr
+  getActiveModels(): Promise<LatestModel[]> {
+    const requestUrl = `${this.baseUrl}/api/models/latest`;
+
+    this.logger.debug(`getActiveModels GET ${requestUr
