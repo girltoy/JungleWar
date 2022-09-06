@@ -147,4 +147,8 @@ export class ModelClient {
         headers: this.headers,
       })
       .then((response) => {
-        this.logg
+        this.logger.info("getActiveModels response", response);
+        return response.data;
+      })
+      .catch((error) => {
+        this.
