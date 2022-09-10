@@ -151,4 +151,10 @@ export class ModelClient {
         return response.data;
       })
       .catch((error) => {
-        this.
+        this.logger.error("getActiveModels error", error);
+        throw new ApiError(error);
+      });
+  }
+
+  /**
+   * Get model instance by it's identifie
