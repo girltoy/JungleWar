@@ -157,4 +157,7 @@ export class ModelClient {
   }
 
   /**
-   * Get model instance by it's identifie
+   * Get model instance by it's identifier
+   */
+  getModelById(modelId: string): Promise<GetModelByIdResponse> {
+    const requestUrl = `${this.baseUrl}/api/models/$
