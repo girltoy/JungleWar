@@ -160,4 +160,10 @@ export class ModelClient {
    * Get model instance by it's identifier
    */
   getModelById(modelId: string): Promise<GetModelByIdResponse> {
-    const requestUrl = `${this.baseUrl}/api/models/$
+    const requestUrl = `${this.baseUrl}/api/models/${modelId}`;
+
+    this.logger.debug(`getModelById GET ${requestUrl}`);
+
+    return axios
+      .get(requestUrl, { headers: this.headers })
+ 
