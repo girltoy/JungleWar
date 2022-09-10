@@ -166,4 +166,8 @@ export class ModelClient {
 
     return axios
       .get(requestUrl, { headers: this.headers })
- 
+      .then((response) => {
+        this.logger.info("getModelById response", response);
+        return response.data;
+      })
+      .catc
