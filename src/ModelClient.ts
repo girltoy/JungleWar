@@ -178,4 +178,6 @@ export class ModelClient {
 
   getModelDetails({
     modelId,
-  
+    version,
+  }: GetModelDetailsParams): Promise<GetModelDetailsResponse> {
+    const requestUrl = `${this.baseUrl}/api/models/${modelId}/versions/${version}`;
