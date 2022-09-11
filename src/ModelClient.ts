@@ -170,4 +170,12 @@ export class ModelClient {
         this.logger.info("getModelById response", response);
         return response.data;
       })
-      .catc
+      .catch((error) => {
+        this.logger.error("getModelById error", error);
+        throw new ApiError(error);
+      });
+  }
+
+  getModelDetails({
+    modelId,
+  
