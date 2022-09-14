@@ -189,4 +189,11 @@ export class ModelClient {
       .then((response) => {
         this.logger.info("getModelVersion response", response);
         return response.data;
-      }
+      })
+      .catch((error) => {
+        this.logger.error("getModelVersion error", error);
+        throw new ApiError(error);
+      });
+  }
+
+  getMo
