@@ -186,3 +186,7 @@ export class ModelClient {
 
     return axios
       .get(requestUrl, { headers: this.headers })
+      .then((response) => {
+        this.logger.info("getModelVersion response", response);
+        return response.data;
+      }
