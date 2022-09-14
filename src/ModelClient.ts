@@ -181,3 +181,8 @@ export class ModelClient {
     version,
   }: GetModelDetailsParams): Promise<GetModelDetailsResponse> {
     const requestUrl = `${this.baseUrl}/api/models/${modelId}/versions/${version}`;
+
+    this.logger.debug(`getModelVersion GET ${requestUrl}`);
+
+    return axios
+      .get(requestUrl, { headers: this.headers })
