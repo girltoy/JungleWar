@@ -205,4 +205,7 @@ export class ModelClient {
       perPage: 20,
     })
       .then((models) => {
-        if (models !== null && models.length > 
+        if (models !== null && models.length > 0) {
+          if (models.length > 1) {
+            return Promise.all(
+              models.map((model) => this.getModelById(model
