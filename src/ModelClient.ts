@@ -196,4 +196,7 @@ export class ModelClient {
       });
   }
 
-  getMo
+  getModelByName(name: string): Promise<GetModelByIdResponse> {
+    this.logger.debug("getModelByName called");
+
+    return this.getModels
