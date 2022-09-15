@@ -199,4 +199,10 @@ export class ModelClient {
   getModelByName(name: string): Promise<GetModelByIdResponse> {
     this.logger.debug("getModelByName called");
 
-    return this.getModels
+    return this.getModels({
+      name,
+      sortBy: "name",
+      perPage: 20,
+    })
+      .then((models) => {
+        if (models !== null && models.length > 
