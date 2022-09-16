@@ -212,4 +212,6 @@ export class ModelClient {
             ).then((models2) => {
               const modelsWithDistance = models2
                 .map((model) => {
-    
+                  const newModel: ModelWithDistance = {
+                    ...model,
+                    distance: compareTwoStrings(name, model.na
