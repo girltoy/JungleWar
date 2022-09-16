@@ -218,4 +218,8 @@ export class ModelClient {
                   };
                   return newModel;
                 })
-                .sort((a, b) => a.distance - b.distan
+                .sort((a, b) => a.distance - b.distance);
+
+              modelsWithDistance.forEach((model) =>
+                this.logger.debug(
+                  `${model.modelId} ${model.n
