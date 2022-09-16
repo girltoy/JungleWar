@@ -214,4 +214,8 @@ export class ModelClient {
                 .map((model) => {
                   const newModel: ModelWithDistance = {
                     ...model,
-                    distance: compareTwoStrings(name, model.na
+                    distance: compareTwoStrings(name, model.name),
+                  };
+                  return newModel;
+                })
+                .sort((a, b) => a.distance - b.distan
