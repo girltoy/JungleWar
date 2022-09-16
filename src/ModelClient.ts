@@ -208,4 +208,8 @@ export class ModelClient {
         if (models !== null && models.length > 0) {
           if (models.length > 1) {
             return Promise.all(
-              models.map((model) => this.getModelById(model
+              models.map((model) => this.getModelById(model.modelId))
+            ).then((models2) => {
+              const modelsWithDistance = models2
+                .map((model) => {
+    
