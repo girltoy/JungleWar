@@ -228,3 +228,5 @@ export class ModelClient {
 
               this.logger.debug(
                 `getModelByName(${name}) model ${
+                  modelsWithDistance[modelsWithDistance.length - 1].modelId
+                } :: ${modelsWithDistance[modelsWi
