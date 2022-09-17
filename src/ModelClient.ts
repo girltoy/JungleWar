@@ -235,4 +235,8 @@ export class ModelClient {
               return modelsWithDistance[modelsWithDistance.length - 1];
             });
           }
-          this.log
+          this.logger.debug(
+            `getModelByName(${name}) model ${models[0].modelId} `
+          );
+
+          return this.getModelByI
