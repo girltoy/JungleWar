@@ -222,4 +222,9 @@ export class ModelClient {
 
               modelsWithDistance.forEach((model) =>
                 this.logger.debug(
-                  `${model.modelId} ${model.n
+                  `${model.modelId} ${model.name} ${model.distance}`
+                )
+              );
+
+              this.logger.debug(
+                `getModelByName(${name}) model ${
