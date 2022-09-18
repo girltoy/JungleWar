@@ -239,4 +239,8 @@ export class ModelClient {
             `getModelByName(${name}) model ${models[0].modelId} `
           );
 
-          return this.getModelByI
+          return this.getModelById(models[0].modelId);
+        } else {
+          throw new ApiError(null, {
+            url: `${this.baseUrl}/api/models`,
+            code: 40
