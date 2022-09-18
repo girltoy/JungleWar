@@ -243,4 +243,10 @@ export class ModelClient {
         } else {
           throw new ApiError(null, {
             url: `${this.baseUrl}/api/models`,
-            code: 40
+            code: 400,
+            message: `Model ${name} not found`,
+          });
+        }
+      })
+      .catch((error) => {
+        this.logger.
