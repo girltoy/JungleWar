@@ -249,4 +249,10 @@ export class ModelClient {
         }
       })
       .catch((error) => {
-        this.logger.
+        this.logger.error("getModelByName error", error);
+        throw error;
+      });
+  }
+
+  /**
+   * Returns a list of all the versions of the model with the spec
