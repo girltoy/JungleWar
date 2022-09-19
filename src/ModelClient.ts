@@ -258,4 +258,9 @@ export class ModelClient {
    * Returns a list of all the versions of the model with the specified id
    */
   getModelVersionsById(modelId: string): Promise<GetModelVersionsByIdResponse> {
-    const requestUrl = `${this.baseUrl}/api/mo
+    const requestUrl = `${this.baseUrl}/api/models/${modelId}/versions`;
+
+    this.logger.debug(`getModelVersionsById GET ${requestUrl}`);
+
+    return axios
+      .get(requestU
