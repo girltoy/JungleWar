@@ -263,4 +263,7 @@ export class ModelClient {
     this.logger.debug(`getModelVersionsById GET ${requestUrl}`);
 
     return axios
-      .get(requestU
+      .get(requestUrl, { headers: this.headers })
+      .then((response) => {
+        this.logger.info("getModelVersionsById response", response);
+        return response.data;
