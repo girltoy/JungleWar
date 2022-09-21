@@ -267,3 +267,8 @@ export class ModelClient {
       .then((response) => {
         this.logger.info("getModelVersionsById response", response);
         return response.data;
+      })
+      .catch((error) => {
+        this.logger.error("getModelVersionsById error", error);
+        throw new ApiError(error);
+      
