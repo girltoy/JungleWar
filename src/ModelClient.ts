@@ -275,4 +275,6 @@ export class ModelClient {
   }
 
   getModelVersionInputSample({ modelId, version }: GetModelDetailsParams) {
-    const requestUrl = `${this.baseUrl}/api/mod
+    const requestUrl = `${this.baseUrl}/api/models/${modelId}/versions/${version}/sample-input`;
+    this.logger.debug(`getModelVersionInputSample GET ${requestUrl}`);
+    ret
