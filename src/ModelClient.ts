@@ -277,4 +277,8 @@ export class ModelClient {
   getModelVersionInputSample({ modelId, version }: GetModelDetailsParams) {
     const requestUrl = `${this.baseUrl}/api/models/${modelId}/versions/${version}/sample-input`;
     this.logger.debug(`getModelVersionInputSample GET ${requestUrl}`);
-    ret
+    return axios
+      .get(requestUrl, { headers: this.headers })
+      .then((response) => {
+        this.logger.info("getModelVersionInputSample response", response);
+  
