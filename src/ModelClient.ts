@@ -294,4 +294,6 @@ export class ModelClient {
     this.logger.debug(`getModelVersionOutputSample GET ${requestUrl}`);
 
     return axios
-   
+      .get(requestUrl, { headers: this.headers })
+      .then((response) => {
+        this.logger.info("getModelVersionOutputSample response", respons
