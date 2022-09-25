@@ -281,4 +281,8 @@ export class ModelClient {
       .get(requestUrl, { headers: this.headers })
       .then((response) => {
         this.logger.info("getModelVersionInputSample response", response);
-  
+        return response.data;
+      })
+      .catch((error) => {
+        this.logger.error("getModelVersionInputSample error", error);
+        throw new ApiError(
