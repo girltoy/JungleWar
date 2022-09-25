@@ -285,4 +285,9 @@ export class ModelClient {
       })
       .catch((error) => {
         this.logger.error("getModelVersionInputSample error", error);
-        throw new ApiError(
+        throw new ApiError(error);
+      });
+  }
+
+  getModelVersionOutputSample({ modelId, version }: GetModelDetailsParams) {
+    const requestUrl = `${this.baseUrl}/api/mod
