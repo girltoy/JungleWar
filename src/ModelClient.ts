@@ -290,4 +290,8 @@ export class ModelClient {
   }
 
   getModelVersionOutputSample({ modelId, version }: GetModelDetailsParams) {
-    const requestUrl = `${this.baseUrl}/api/mod
+    const requestUrl = `${this.baseUrl}/api/models/${modelId}/versions/${version}/sample-output`;
+    this.logger.debug(`getModelVersionOutputSample GET ${requestUrl}`);
+
+    return axios
+   
