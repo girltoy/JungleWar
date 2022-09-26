@@ -300,4 +300,8 @@ export class ModelClient {
         return response.data;
       })
       .catch((error) => {
-        this.logger.error("getModelVersionOutputSample error", err
+        this.logger.error("getModelVersionOutputSample error", error);
+        throw new ApiError(error);
+      });
+  }
+}
