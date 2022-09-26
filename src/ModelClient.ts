@@ -296,4 +296,8 @@ export class ModelClient {
     return axios
       .get(requestUrl, { headers: this.headers })
       .then((response) => {
-        this.logger.info("getModelVersionOutputSample response", respons
+        this.logger.info("getModelVersionOutputSample response", response);
+        return response.data;
+      })
+      .catch((error) => {
+        this.logger.error("getModelVersionOutputSample error", err
