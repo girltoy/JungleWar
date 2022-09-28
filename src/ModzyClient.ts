@@ -220,3 +220,4 @@ export class ModzyClient {
   fileToDataUrl(file: File) {
     return toBase64(file);
   }
+}
