@@ -5,4 +5,6 @@ import { promises as fs } from "fs";
 // type-checking in ModzyClient because it doesn't know this function is if overridden
 // by the browser version
 export async function toBase64({ path, mimeType }: any) {
-  const raw = await fs.readFile(path, { encoding: "ba
+  const raw = await fs.readFile(path, { encoding: "base64" });
+  return "data:" + mimeType + ";base64," + raw;
+}
