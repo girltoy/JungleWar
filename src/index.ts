@@ -1,2 +1,2 @@
 export * from "./ModzyClient";
-export * from "./typ
+export * from "./types";
