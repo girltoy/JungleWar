@@ -21,4 +21,9 @@ const DataUnit = {
 type Unit = keyof typeof DataUnit;
 type Match = [string, string, string, Unit];
 
-export function huma
+export function humanReadToBytes(humanSize: string) {
+  const match = humanSize.match(SIZE_PATTERN) as Match;
+
+  if (match?.[1] && match?.[3]) {
+    const unit = match[3];
+    r
