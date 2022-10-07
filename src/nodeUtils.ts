@@ -26,4 +26,11 @@ export function humanReadToBytes(humanSize: string) {
 
   if (match?.[1] && match?.[3]) {
     const unit = match[3];
-    r
+    return parseInt(match[1]) * DataUnit[unit];
+  } else {
+    return 1;
+  }
+}
+
+function readBytes(fd: number, sharedBuffer: Buffer): Promise<void> {
+  return ne
