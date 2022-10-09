@@ -36,4 +36,12 @@ function readBytes(fd: number, sharedBuffer: Buffer): Promise<void> {
   return new Promise((resolve, reject) => {
     fs.read(fd, sharedBuffer, 0, sharedBuffer.length, null, (err) => {
       if (err) {
-        return reje
+        return reject(err);
+      }
+      resolve();
+    });
+  });
+}
+
+export async function* fileToChunks(filePath: string, size: number) {
+  const sharedBuffer = Buffer.alloc(
