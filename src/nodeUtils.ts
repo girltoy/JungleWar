@@ -33,4 +33,7 @@ export function humanReadToBytes(humanSize: string) {
 }
 
 function readBytes(fd: number, sharedBuffer: Buffer): Promise<void> {
-  return ne
+  return new Promise((resolve, reject) => {
+    fs.read(fd, sharedBuffer, 0, sharedBuffer.length, null, (err) => {
+      if (err) {
+        return reje
