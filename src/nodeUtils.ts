@@ -52,3 +52,7 @@ export async function* fileToChunks(filePath: string, size: number) {
   for (let i = 0; i < Math.ceil(stats.size / size); i++) {
     await readBytes(fd, sharedBuffer);
     bytesRead = (i + 1) * size;
+    if (bytesRead > stats.size) {
+      end = size - (bytesRead - stats.size);
+    }
+    yield sharedBuffer.slic
