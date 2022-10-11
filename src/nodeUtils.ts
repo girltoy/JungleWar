@@ -49,4 +49,6 @@ export async function* fileToChunks(filePath: string, size: number) {
   const fd = fs.openSync(filePath, "r");
   let bytesRead = 0;
   let end = size;
-  f
+  for (let i = 0; i < Math.ceil(stats.size / size); i++) {
+    await readBytes(fd, sharedBuffer);
+    bytesRead = (i + 1) * size;
