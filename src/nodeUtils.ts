@@ -44,4 +44,9 @@ function readBytes(fd: number, sharedBuffer: Buffer): Promise<void> {
 }
 
 export async function* fileToChunks(filePath: string, size: number) {
-  const sharedBuffer = Buffer.alloc(
+  const sharedBuffer = Buffer.alloc(size);
+  const stats = fs.statSync(filePath);
+  const fd = fs.openSync(filePath, "r");
+  let bytesRead = 0;
+  let end = size;
+  f
