@@ -55,4 +55,10 @@ export async function* fileToChunks(filePath: string, size: number) {
     if (bytesRead > stats.size) {
       end = size - (bytesRead - stats.size);
     }
-    yield sharedBuffer.slic
+    yield sharedBuffer.slice(0, end);
+  }
+  fs.closeSync(fd);
+}
+
+export async function* byteArrayToChunks(byteArray: any, size: number) {
+  for (let i = 0; i <
