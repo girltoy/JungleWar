@@ -61,4 +61,7 @@ export async function* fileToChunks(filePath: string, size: number) {
 }
 
 export async function* byteArrayToChunks(byteArray: any, size: number) {
-  for (let i = 0; i <
+  for (let i = 0; i < byteArray.length; i += size) {
+    yield byteArray.slice(i, i + size);
+  }
+}
