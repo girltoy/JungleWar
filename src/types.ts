@@ -337,3 +337,95 @@ export interface Engine {
   failed: number;
   queued: number;
   spinningUp: number;
+  spinningDown: number;
+  running: number;
+  ready: number;
+}
+
+export type EnginesResponse = Engine[];
+
+type AccessKeys = {
+  prefix: string;
+  isDefault: boolean;
+};
+
+export type JobInput = {
+  identifier: string;
+};
+
+export interface GetJobResponse {
+  jobIdentifier: string;
+  submittedBy: string;
+  accountIdentifier: string;
+  model: {
+    identifier: string;
+    version: string;
+    name: string;
+  };
+  status: string;
+  createdAt: string;
+  updatedAt: string;
+  submittedAt: string;
+  total: number;
+  pending: number;
+  completed: number;
+  failed: number;
+  elapsedTime: number;
+  queueTime: number;
+  user: {
+    identifier: string;
+    externalIdentifier: string;
+    firstName: string;
+    lastName: string;
+    email: string;
+    accessKeys: AccessKeys[];
+    status: string;
+    title: string;
+  };
+  jobInputs: JobInput[];
+  explain: boolean;
+  team: {
+    identifier: string;
+  };
+}
+
+export interface GetResultResponse {
+  jobIdentifier: string;
+  accountIdentifier: string;
+  team: {
+    identifier: string;
+  };
+  total: number;
+  completed: number;
+  failed: number;
+  finished: boolean;
+  submittedByKey: string;
+  explained: boolean;
+  submittedAt: string;
+  initialQueueTime: number;
+  totalQueueTime: number;
+  averageModelLatency: number;
+  totalModelLatency: number;
+  elapsedTime: number;
+  startingResultSummarizing: string;
+  resultSummarizing: number;
+  inputSize: number;
+  results: {
+    job: {
+      status: string;
+      engine: string;
+      inputFetching: number;
+      outputUploading?: any;
+      modelLatency: number;
+      queueTime: number;
+      startTime: string;
+      updateTime: string;
+      endTime: string;
+      [key: string]: any;
+      voting: {
+        up: 0;
+        down: 0;
+      };
+    };
+  };
+}
