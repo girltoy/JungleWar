@@ -50,4 +50,4 @@
     // "outDir": "./",                                   /* Specify an output folder for all emitted files. */
     // "removeComments": true,                           /* Disable emitting comments. */
     // "noEmit": true,                                   /* Disable emitting files from a compilation. */
-    // 
+    // "importHelpers": true,                            /* Allow importing helper functions from tslib once per project, instead of including them per-file. 
