@@ -2,4 +2,8 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "declaration": true,
-    "dec
+    "declarationDir": "./types",
+    "emitDeclarationOnly": true,
+    "noEmit": false,
+  },
+}
